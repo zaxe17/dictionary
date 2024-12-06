@@ -17,8 +17,7 @@ const Dashboard = ({ sidebarToggle, setSidebarToggle }) => {
 				setQuery={setQuery}
 			/>
 
-			<div className="px-10">
-				{/* AnimatePresence for smooth route transitions */}
+			<div className="px-10 overflow-x-hidden">
 				<AnimatePresence mode="wait">
 					<Routes location={location} key={location.pathname}>
 						<Route
