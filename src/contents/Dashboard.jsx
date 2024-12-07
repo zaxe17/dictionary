@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Navbar from "./Navbar";
 import Home from "./Home";
 import Dictionary from "./Dictionary";
+import Books from "./Books";
 
 const Dashboard = ({ sidebarToggle, setSidebarToggle }) => {
 	const [query, setQuery] = useState("");
@@ -42,6 +43,17 @@ const Dashboard = ({ sidebarToggle, setSidebarToggle }) => {
 									initial={{ opacity: 0, x: 50 }}
 									transition={{ duration: 0.5 }}>
 									<Dictionary query={query} />
+								</motion.div>
+							}
+						/>
+						<Route
+							path="/books"
+							element={
+								<motion.div
+									whileInView={{ opacity: 1, x: 0 }}
+									initial={{ opacity: 0, x: 50 }}
+									transition={{ duration: 0.5 }}>
+									<Books />
 								</motion.div>
 							}
 						/>
