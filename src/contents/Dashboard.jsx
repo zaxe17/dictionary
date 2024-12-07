@@ -10,7 +10,10 @@ const Dashboard = ({ sidebarToggle, setSidebarToggle }) => {
 	const location = useLocation();
 
 	return (
-		<div className={`${sidebarToggle ? "" : " ml-64 "} w-full`}>
+		<div
+			className={`${
+				sidebarToggle ? "" : "lg:ml-64"
+			} w-full transition-all duration-300 ease-in-out`}>
 			<Navbar
 				sidebarToggle={sidebarToggle}
 				setSidebarToggle={setSidebarToggle}
