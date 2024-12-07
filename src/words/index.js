@@ -948,6 +948,15 @@ export const WORDS = [
                     "Consumed by bees and other insects.",
                     "A symbol of sweetness and nature."
                 ],
+            },
+            {
+                word: "nigga",
+                pronounce: "nig-uh",
+                desc: [
+                    "A term used to refer to or address a Black person.",
+                    "Used by some Black people to refer to themselves or to another Black person in a neutral or positive way.",
+                    "Used as a pronunciation spelling of nigger."
+                ],
             }
         ]
     },    
@@ -1767,4 +1776,12 @@ export const WORDS = [
             }
         ]
     },
+]
+
+export const BOOKS = [
+    {
+        title: "jan marc",
+        author: "jacolbia",
+    },
+    
 ]

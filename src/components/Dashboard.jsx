@@ -21,15 +21,15 @@ const Dashboard = ({ sidebarToggle, setSidebarToggle }) => {
 				setQuery={setQuery}
 			/>
 
-			<div className="px-10 overflow-x-hidden">
+			<div className="px-10">
 				<AnimatePresence mode="wait">
 					<Routes location={location} key={location.pathname}>
 						<Route
 							path="/"
 							element={
 								<motion.div
-									whileInView={{ opacity: 1, x: 0 }}
-									initial={{ opacity: 0, x: 50 }}
+									whileInView={{ opacity: 1 }}
+									initial={{ opacity: 0 }}
 									transition={{ duration: 0.5 }}>
 									<Home />
 								</motion.div>
@@ -39,8 +39,8 @@ const Dashboard = ({ sidebarToggle, setSidebarToggle }) => {
 							path="/dictionary"
 							element={
 								<motion.div
-									whileInView={{ opacity: 1, x: 0 }}
-									initial={{ opacity: 0, x: 50 }}
+									whileInView={{ opacity: 1}}
+									initial={{ opacity: 0}}
 									transition={{ duration: 0.5 }}>
 									<Dictionary query={query} />
 								</motion.div>

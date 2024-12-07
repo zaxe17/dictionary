@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { WORDS } from "../words";
 import Popup from "./Popup";
+import { motion } from "framer-motion";
 
 const getFilteredItems = (query, items) => {
 	if (!query) {
@@ -24,9 +25,13 @@ const Dictionary = ({ query }) => {
 			{filteredItems.length > 0 ? (
 				filteredItems.map((words, index) => (
 					<div key={index}>
-						<h1 className="capitalize font-bold text-4xl pl-4 pb-3">
+						<motion.h1
+							whileInView={{ opacity: 1, y: 0 }}
+							initial={{ opacity: 0, y: 60 }}
+							transition={{ duration: 0.5 }}
+							className="capitalize font-bold text-4xl pl-4 pb-3">
 							{words.letter}
-						</h1>
+						</motion.h1>
 						<div className="border-b border-teal-400 pb-4 break-words">
 							<div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
 								{words.description
@@ -39,9 +44,12 @@ const Dictionary = ({ query }) => {
 										a.word.localeCompare(b.word)
 									)
 									.map((descript, index) => (
-										<div
+										<motion.div
+											whileInView={{ opacity: 1, y: 0 }}
+											initial={{ opacity: 0, y: 60 }}
+											transition={{ duration: 1 }}
 											key={index}
-											className="h-48 lg:h-60 rounded-2xl shadow-2xl flex flex-col lg:m-[0.5rem] bg-teal-100 cursor-pointer p-3"
+											className="h-48 lg:h-60 rounded-2xl shadow-xl flex flex-col lg:m-[0.5rem] bg-teal-100 cursor-pointer p-3"
 											onClick={() => {
 												setSelectedWord(descript);
 												setOpen(true);
@@ -66,7 +74,7 @@ const Dictionary = ({ query }) => {
 													)
 												)}
 											</ol>
-										</div>
+										</motion.div>
 									))}
 							</div>
 						</div>
@@ -93,7 +101,7 @@ const Dictionary = ({ query }) => {
 							{selectedWord.desc.map((desc, index) => (
 								<li
 									key={index}
-									className="lg:text-xl break-words overflow-y-scroll pb-5">
+									className="lg:text-xl break-words overflow-y-scroll pb-5 scroll-hidden">
 									{desc}
 								</li>
 							))}

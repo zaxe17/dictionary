@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Sidebar from "./contents/Sidebar";
-import Dashboard from "./contents/Dashboard";
+import Sidebar from "./components/Sidebar";
+import Dashboard from "./components/Dashboard";
 import { BrowserRouter as Router } from "react-router-dom";
 
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
 		<Router>
 			<div className="flex selection:text-emerald-700 selection:bg-emerald-200">
 				<div className="fixed top-0 -z-10 h-full w-full">
-					<div className="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#0f766e_100%)]"></div>
+					<div className="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_10%,#0f766e_100%)]"></div>
 				</div>
 
 				<Sidebar sidebarToggle={sidebarToggle} />
