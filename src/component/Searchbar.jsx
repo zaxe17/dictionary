@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { FaSearch } from "react-icons/fa";
 import { WORDS, BOOKS } from "../words";
 import Popup from "./Popup";
@@ -8,6 +8,7 @@ const Searchbar = () => {
 	const [activeSearch, setActiveSearch] = useState([]);
 	const [popupContent, setPopupContent] = useState(null);
 	const [isPopupOpen, setIsPopupOpen] = useState(false);
+	const searchBarRef = useRef(null);
 
 	const handleSearch = (e) => {
 		const searchQuery = e.target.value.toLowerCase();
@@ -19,7 +20,9 @@ const Searchbar = () => {
 
 		const filteredWords = WORDS.map((letterObj) =>
 			letterObj.description
-				.filter((desc) => desc.word.toLowerCase().startsWith(searchQuery))
+				.filter((desc) =>
+					desc.word.toLowerCase().startsWith(searchQuery)
+				)
 				.map((desc) => ({
 					word: desc.word,
 					pronounce: desc.pronounce,
@@ -52,8 +55,24 @@ const Searchbar = () => {
 		setIsPopupOpen(false);
 	};
 
+	useEffect(() => {
+		const handleClickOutside = (event) => {
+			if (
+				searchBarRef.current &&
+				!searchBarRef.current.contains(event.target)
+			) {
+				setActiveSearch([]);
+			}
+		};
+
+		document.addEventListener("mousedown", handleClickOutside);
+		return () => {
+			document.removeEventListener("mousedown", handleClickOutside);
+		};
+	}, []);
+
 	return (
-		<form className="w-[300px] lg:w-[500px] relative">
+		<form ref={searchBarRef} className="w-[300px] lg:w-[500px] relative">
 			<motion.div
 				whileInView={{ opacity: 1, width: "100%" }}
 				initial={{ opacity: 0, width: 0 }}
@@ -71,9 +90,9 @@ const Searchbar = () => {
 			</motion.div>
 
 			{activeSearch.length > 0 && (
-				<div className="absolute top-20 p-4 bg-teal-500 text-white w-full rounded-xl left-1/2 -translate-x-1/2 flex flex-col gap-2">
+				<div className="absolute top-20 p-2 bg-teal-500 text-white w-full rounded-xl left-1/2 -translate-x-1/2 flex flex-col gap-2">
 					{activeSearch.map((result, index) => (
-						<div key={index} className="flex flex-col">
+						<div key={index} className="flex flex-col hover:bg-teal-400 p-1 rounded-md">
 							{result.word ? (
 								<span
 									className="font-bold cursor-pointer"

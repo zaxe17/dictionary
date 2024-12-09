@@ -109,7 +109,7 @@ export const WORDS = [
                     "The peak or culmination of a particular activity or career.",
                     "The most successful or powerful moment in a person's life or an event."
                 ],
-            }, 
+            },
         ]
     },
     {
@@ -231,9 +231,9 @@ export const WORDS = [
                     "Straightforward or frank in speech, often to the point of being harsh.",
                     "To make less sharp or weaken the effectiveness of something."
                 ],
-            },     
+            },
         ]
-    },    
+    },
     {
         letter: 'c',
         description: [
@@ -353,9 +353,9 @@ export const WORDS = [
                     "The land beside the sea, often referring to a region or the coastline.",
                     "To continue at a steady pace without additional effort or intervention, especially after reaching a certain level of achievement."
                 ],
-            },            
+            },
         ]
-    },    
+    },
     {
         letter: 'd',
         description: [
@@ -475,9 +475,9 @@ export const WORDS = [
                     "To diminish or reduce the intensity of something, such as enthusiasm.",
                     "A condition of being somewhat wet, often due to humidity."
                 ],
-            },            
+            },
         ]
-    },    
+    },
     {
         letter: 'e',
         description: [
@@ -543,9 +543,63 @@ export const WORDS = [
                     "A common term for the ground or soil.",
                     "A symbol of nature and environmental balance."
                 ],
-            }
+            },
+            {
+                word: "Éclair",
+                pronounce: "",
+                desc: [
+                    "A French pastry made from choux dough filled with cream and topped with icing.",
+                    "Typically served as a dessert, éclairs are often flavored with chocolate or coffee.",
+                    "The name 'éclair' means 'flash of lightning' in French, possibly due to the speed with which they are eaten."
+                ]
+            },
+            {
+                word: "Enamel",
+                pronounce: "",
+                desc: [
+                    "A smooth, glossy coating typically used for covering surfaces, such as metal, ceramics, or teeth.",
+                    "Dental enamel is the hard, outermost layer of the teeth, providing protection from decay.",
+                    "Enamel can also refer to a type of paint used in art, often characterized by a durable, shiny finish."
+                ]
+            },
+            {
+                word: "Euthanasia",
+                pronounce: "",
+                desc: [
+                    "The practice of intentionally ending a life to relieve pain and suffering, typically in cases of terminal illness.",
+                    "Legal and ethical debates surround euthanasia, especially regarding consent and medical involvement.",
+                    "Euthanasia is often referred to as 'mercy killing' because it aims to alleviate unrelievable suffering in patients."
+                ]
+            },
+            {
+                word: "Edify",
+                pronounce: "",
+                desc: [
+                    "To instruct or improve someone morally or intellectually.",
+                    "Often used in a religious context, to edify means to build up or strengthen the spirit of others.",
+                    "The term can also be applied to the act of educating or enlightening people on important principles."
+                ]
+            },
+            {
+                word: "Elevate",
+                pronounce: "",
+                desc: [
+                    "To raise something to a higher position or level.",
+                    "To promote or improve someone's status, position, or reputation.",
+                    "In a spiritual sense, to elevate someone can mean to lift their mood, consciousness, or outlook on life."
+                ]
+            },
+            {
+                word: "Eliminate",
+                pronounce: "",
+                desc: [
+                    "To completely remove or get rid of something.",
+                    "Often used in problem-solving contexts, meaning to rule out possible solutions or options.",
+                    "In mathematics, elimination refers to a method used to solve systems of equations by removing variables."
+                ]
+            },
         ]
-    },    
+    },
     {
         letter: 'f',
         description: [
@@ -611,9 +665,63 @@ export const WORDS = [
                     "Used for warmth, cooking, and energy.",
                     "A symbol of passion, destruction, and renewal."
                 ],
-            }
+            },
+            {
+                word: "Freak",
+                pronounce: "frēk",
+                desc: [
+                    "A strange or unusual person.",
+                    "A person with a particular skill, such as a 'math freak.'",
+                    "An exaggerated reaction to something extreme, like 'freaking out.'"
+                ]
+            },
+            {
+                word: "Fool",
+                pronounce: "fool",
+                desc: [
+                    "A person lacking good judgment.",
+                    "A trickster or jester, historically entertaining others with tricks.",
+                    "To deceive or mock, like 'don't fool me.'"
+                ]
+            },
+            {
+                word: "Fable",
+                pronounce: "fā-bəl",
+                desc: [
+                    "A short story with a moral, often with animals as characters.",
+                    "A myth or legend, usually imaginary or exaggerated.",
+                    "A literary genre used in teaching lessons or conveying ethics."
+                ]
+            },
+            {
+                word: "Feast",
+                pronounce: "fēst",
+                desc: [
+                    "A large, celebratory meal.",
+                    "An abundance of food, often with various dishes.",
+                    "To eat eagerly or in large quantities."
+                ]
+            },
+            {
+                word: "Feral",
+                pronounce: "fer-əl",
+                desc: [
+                    "Wild and untamed, especially animals in their natural state.",
+                    "A person behaving in a savage or unruly manner.",
+                    "Relating to something that exists in its natural, undomesticated state."
+                ]
+            },
+            {
+                word: "Flick",
+                pronounce: "flik",
+                desc: [
+                    "To move lightly and quickly, like flicking a switch.",
+                    "A casual or short film, sometimes called a 'flick.'",
+                    "To lightly strike something with a quick motion, like flicking a finger."
+                ]
+            },
         ]
-    },    
+    },
     {
         letter: 'g',
         description: [
@@ -679,9 +787,63 @@ export const WORDS = [
                     "Found in polar regions and high mountains.",
                     "A symbol of natural power and time."
                 ],
-            }
+            },
+            {
+                word: "Gem",
+                pronounce: "jem",
+                desc: [
+                    "A precious or semi-precious stone, typically one that has been cut and polished.",
+                    "Something prized for its beauty or worth.",
+                    "A person or thing considered to be outstanding or special."
+                ]
+            },
+            {
+                word: "Guess",
+                pronounce: "ges",
+                desc: [
+                    "To form an estimate or opinion without sufficient evidence.",
+                    "A choice or prediction made without complete information.",
+                    "An answer or solution to a question based on limited knowledge."
+                ]
+            },
+            {
+                word: "Golem",
+                pronounce: "go-luhm",
+                desc: [
+                    "A creature from Jewish folklore, usually made of clay or stone, brought to life by magic.",
+                    "A being that is animated by mystical powers, often depicted as a servant or protector.",
+                    "A creature in fantasy stories or games, often created to serve its creator's will."
+                ]
+            },
+            {
+                word: "Genocide",
+                pronounce: "jen-uh-sahyd",
+                desc: [
+                    "The deliberate killing of a large number of people, especially those of a particular ethnic group or nation.",
+                    "The systematic extermination of a people or nation.",
+                    "A coordinated effort to destroy a group based on their identity."
+                ]
+            },
+            {
+                word: "Greed",
+                pronounce: "greed",
+                desc: [
+                    "An intense and selfish desire for something, particularly wealth or material gain.",
+                    "The excessive pursuit of something, often leading to harm or exploitation.",
+                    "A strong desire for more than one needs or deserves."
+                ]
+            },
+            {
+                word: "Glide",
+                pronounce: "glahyd",
+                desc: [
+                    "To move smoothly and continuously along, as if without effort.",
+                    "To fly or soar gently through the air.",
+                    "To slide or flow effortlessly, often with grace or ease."
+                ]
+            },
         ]
-    },    
+    },
     {
         letter: 'h',
         description: [
@@ -747,9 +909,9 @@ export const WORDS = [
                     "Used as a natural sweetener.",
                     "A symbol of sweetness and nourishment."
                 ],
-            }
+            },
         ]
-    },    
+    },
     {
         letter: 'i',
         description: [
@@ -817,7 +979,7 @@ export const WORDS = [
                 ],
             }
         ]
-    },    
+    },
     {
         letter: 'j',
         description: [
@@ -885,7 +1047,7 @@ export const WORDS = [
                 ],
             }
         ]
-    },    
+    },
     {
         letter: 'k',
         description: [
@@ -953,7 +1115,7 @@ export const WORDS = [
                 ],
             }
         ]
-    },    
+    },
     {
         letter: 'l',
         description: [
@@ -1166,7 +1328,7 @@ export const WORDS = [
                 ],
             }
         ]
-    },    
+    },
     {
         letter: 'o',
         description: [
@@ -1710,7 +1872,7 @@ export const WORDS = [
                 ],
             }
         ]
-    },    
+    },
     {
         letter: 'w',
         description: [
