@@ -8,11 +8,12 @@ const getFilteredItems = (query, items) => {
     if (!query) {
         return items;
     }
+
     return items.filter((item) =>
-        item.description.some((desc) =>
-            desc.word.toLowerCase().includes(query.toLowerCase())
-        )
-    );
+		item.description.some((desc) =>
+			desc.word.toLowerCase().startsWith(query.toLowerCase())
+		)
+	);
 };
 
 const Dictionary = () => {
@@ -96,7 +97,6 @@ const Dictionary = () => {
 				</h1>
 			)}
 
-			{/* Popup */}
 			<Popup open={open} onClose={handleClosePopup}>
 				{selectedWord && (
 					<div className="w-fit mx-auto my-4 max-w-full">

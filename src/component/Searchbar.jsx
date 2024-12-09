@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { WORDS, BOOKS } from "../words";
 import Popup from "../content/Popup";
+import { motion } from "framer-motion";
 
 const Searchbar = () => {
 	const [activeSearch, setActiveSearch] = useState([]);
@@ -52,7 +53,9 @@ const Searchbar = () => {
 	};
 
 	return (
-		<form className="w-[300px] lg:w-[500px] relative">
+		<motion.form className="w-[300px] lg:w-[500px] relative" whileInView={{ opacity: 1, y: 0 }}
+		initial={{ opacity: 0, y: 50 }}
+		transition={{ duration: 0.5 }}>
 			<div className="relative">
 				<input
 					type="search"
@@ -125,7 +128,7 @@ const Searchbar = () => {
 			<Popup open={isPopupOpen} onClose={closePopup}>
 				{popupContent}
 			</Popup>
-		</form>
+		</motion.form>
 	);
 };
 

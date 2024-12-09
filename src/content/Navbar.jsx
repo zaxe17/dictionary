@@ -13,8 +13,6 @@ const Navbar = ({ sidebarToggle, setSidebarToggle }) => {
 
     const getTitle = () => pageTitles[location.pathname] || "App";
 
-    const isSearchPage = ["/dictionary", "/books"].includes(location.pathname);
-
     return (
 		<nav className="bg-teal-600 px-4 py-3 flex justify-between sticky top-0 w-full z-50">
 			<div className="flex items-center text-xl">
@@ -25,8 +23,8 @@ const Navbar = ({ sidebarToggle, setSidebarToggle }) => {
 				<span className="text-white font-semibold">{getTitle()}</span>
 			</div>
 
-			<div className="flex items-center gap-x-1 lg:gap-x-5">
-				{/* <div
+			{/* <div className="flex items-center gap-x-1 lg:gap-x-5">
+				<div
 					className={`relative md:w-65 w-40 lg:w-60 ${
 						isSearchPage ? "block" : "hidden"
 					}`}>
@@ -41,9 +39,9 @@ const Navbar = ({ sidebarToggle, setSidebarToggle }) => {
 						placeholder="Search..."
 						onChange={handleSearchChange}
 					/>
-				</div> */}
+				</div>
 
-				{/* <div className="text-white">
+				<div className="text-white">
                     <FaBell className="w-5 h-5 lg:w-6 lg:h-6" />
                 </div>
 
@@ -64,8 +62,8 @@ const Navbar = ({ sidebarToggle, setSidebarToggle }) => {
                             </ul>
                         </div>
                     </button>
-                </div> */}
-			</div>
+                </div>
+			</div> */}
 		</nav>
 	);
 };
