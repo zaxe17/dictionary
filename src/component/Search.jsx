@@ -12,14 +12,14 @@ const Search = ({ setQuery }) => {
 				className="relative">
 				<input
 					type="text"
-					className="w-full h-9 lg:h-full p-4 rounded-full bg-teal-600 shadow outline-none placeholder-teal-400 focus:text-white text-teal-900"
+					className="w-full h-9 lg:h-full p-4 rounded-full bg-teal-400 shadow outline-none placeholder-teal-700 focus:text-white text-teal-900"
 					placeholder="Search..."
 					onChange={handleSearchChange}
 				/>
 
 				<button
 					type="button"
-					className="absolute h-auto w-auto right-[0.15rem] lg:right-1 top-1/2 -translate-y-1/2 p-2 lg:p-4 text-teal-900 bg-teal-700 rounded-full flex justify-center items-center">
+					className="absolute h-auto w-auto right-[0.15rem] lg:right-1 top-1/2 -translate-y-1/2 p-2 lg:p-4 text-teal-900 bg-teal-500 rounded-full flex justify-center items-center">
 					<FaSearch />
 				</button>
 			</div>
