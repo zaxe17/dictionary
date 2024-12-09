@@ -3,7 +3,7 @@ import { FaCompressArrowsAlt } from "react-icons/fa";
 const Popup = ({ open, onClose, children }) => {
 	return (
 		<div
-			className={`fixed inset-0 flex justify-center items-center transition-colors ${
+			className={`fixed inset-0 flex justify-center items-center transition-colors z-50 ${
 				open ? "visible bg-black/30" : "invisible"
 			}`}
 			onClick={onClose}>

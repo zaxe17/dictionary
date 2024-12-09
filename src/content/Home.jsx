@@ -1,4 +1,4 @@
-import Searchbar from "./Searchbar";
+import Searchbar from "../component/Searchbar";
 import { motion } from "framer-motion";
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
 				whileInView={{ opacity: 1, y: 0 }}
 				initial={{ opacity: 0, y: 50 }}
 				transition={{ duration: 0.5 }}>
-				<Searchbar />
+				<Searchbar context={Home}/>
 			</motion.div>
 		</div>
 	);

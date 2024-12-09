@@ -53,7 +53,7 @@ const Dashboard = ({ sidebarToggle, setSidebarToggle }) => {
 									whileInView={{ opacity: 1, x: 0 }}
 									initial={{ opacity: 0, x: 50 }}
 									transition={{ duration: 0.5 }}>
-									<Books />
+									<Books query={query} />
 								</motion.div>
 							}
 						/>

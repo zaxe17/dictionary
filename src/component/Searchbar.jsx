@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { WORDS, BOOKS } from "../words";
-import Popup from "./Popup";
+import Popup from "../content/Popup";
 
 const Searchbar = () => {
 	const [activeSearch, setActiveSearch] = useState([]);
@@ -57,7 +57,7 @@ const Searchbar = () => {
 				<input
 					type="search"
 					placeholder="Search..."
-					className="w-full p-4 rounded-full bg-teal-600 shadow outline-none placeholder-teal-400 focus:text-white text-teal-900"
+					className="w-full h-9 lg:h-full p-4 rounded-full bg-teal-600 shadow outline-none placeholder-teal-400 focus:text-white text-teal-900"
 					onChange={(e) => handleSearch(e)}
 				/>
 				<button className="absolute right-1 top-1/2 -translate-y-1/2 p-4 text-teal-900 bg-teal-700 rounded-full">
@@ -80,9 +80,7 @@ const Searchbar = () => {
 														{result.word}
 													</h1>
 													<p className="text-center text-md italic mb-4 border-b border-teal-600 pb-2">
-														[{" "}
-														{result.pronounce}{" "}
-														]
+														[ {result.pronounce} ]
 													</p>
 												</div>
 												<ol className="list-decimal list-inside">

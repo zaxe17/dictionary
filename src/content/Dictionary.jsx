@@ -2,29 +2,39 @@ import { useState } from "react";
 import { WORDS } from "../words";
 import Popup from "./Popup";
 import { motion } from "framer-motion";
+import Search from "../component/Search";
 
 const getFilteredItems = (query, items) => {
-	if (!query) {
-		return items;
-	}
-
-	return items.filter((item) =>
-		item.description.some((desc) =>
-			desc.word.toLowerCase().includes(query.toLowerCase())
-		)
-	);
+    if (!query) {
+        return items;
+    }
+    return items.filter((item) =>
+        item.description.some((desc) =>
+            desc.word.toLowerCase().includes(query.toLowerCase())
+        )
+    );
 };
 
-const Dictionary = ({ query }) => {
-	const filteredItems = getFilteredItems(query, WORDS);
-	const [open, setOpen] = useState(false);
-	const [selectedWord, setSelectedWord] = useState(null);
+const Dictionary = () => {
+    const [query, setQuery] = useState("");
+    const filteredItems = getFilteredItems(query, WORDS);
+    const [open, setOpen] = useState(false);
+    const [selectedWord, setSelectedWord] = useState(null);
 
-	return (
+    const handleClosePopup = () => {
+        setOpen(false);
+        setSelectedWord(null);
+    };
+
+    return (
 		<div className="pt-10">
+			<div className="flex justify-center items-center mx-auto lg:my-6 flex-col w-full h-full">
+				<Search setQuery={setQuery} />
+			</div>
+
 			{filteredItems.length > 0 ? (
 				filteredItems.map((words, index) => (
-					<div key={index}>
+					<div key={index} className="pt-10">
 						<motion.h1
 							whileInView={{ opacity: 1, y: 0 }}
 							initial={{ opacity: 0, y: 60 }}
@@ -49,7 +59,7 @@ const Dictionary = ({ query }) => {
 											initial={{ opacity: 0, y: 60 }}
 											transition={{ duration: 1 }}
 											key={index}
-											className="h-48 lg:h-60 rounded-2xl shadow-xl flex flex-col lg:m-[0.5rem] bg-teal-100 cursor-pointer p-3"
+											className="h-48 lg:h-60 rounded-2xl shadow-2xl flex flex-col lg:m-[0.5rem] bg-teal-100 cursor-pointer p-3"
 											onClick={() => {
 												setSelectedWord(descript);
 												setOpen(true);
@@ -86,8 +96,9 @@ const Dictionary = ({ query }) => {
 				</h1>
 			)}
 
-			{open && selectedWord && (
-				<Popup open={open} onClose={() => setOpen(false)}>
+			{/* Popup */}
+			<Popup open={open} onClose={handleClosePopup}>
+				{selectedWord && (
 					<div className="w-fit mx-auto my-4 max-w-full">
 						<div className="sticky top-0 bg-teal-100 z-10">
 							<h1 className="text-center capitalize text-5xl font-bold mb-2">
@@ -107,8 +118,8 @@ const Dictionary = ({ query }) => {
 							))}
 						</ol>
 					</div>
-				</Popup>
-			)}
+				)}
+			</Popup>
 		</div>
 	);
 };

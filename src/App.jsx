@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Sidebar from "./components/Sidebar";
-import Dashboard from "./components/Dashboard";
+import Sidebar from "./content/Sidebar";
+import Dashboard from "./content/Dashboard";
 import { BrowserRouter as Router } from "react-router-dom";
 
 const App = () => {

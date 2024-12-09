@@ -1,29 +1,24 @@
-import { FaBars, FaBell, FaSearch, FaUserCircle } from "react-icons/fa";
+import { FaBell, FaSearch, FaUserCircle } from "react-icons/fa";
+import { HiMenuAlt2 } from "react-icons/hi";
 import { useLocation } from "react-router-dom";
 
-const Navbar = ({ sidebarToggle, setSidebarToggle, setQuery }) => {
+const Navbar = ({ sidebarToggle, setSidebarToggle }) => {
     const location = useLocation();
 
     const pageTitles = {
         "/": "Home",
         "/dictionary": "Dictionary",
         "/books": "Books",
-        "/more": "More",
     };
 
     const getTitle = () => pageTitles[location.pathname] || "App";
-
-
-    const handleSearchChange = (e) => {
-        setQuery(e.target.value);
-    };
 
     const isSearchPage = ["/dictionary", "/books"].includes(location.pathname);
 
     return (
 		<nav className="bg-teal-600 px-4 py-3 flex justify-between sticky top-0 w-full z-50">
 			<div className="flex items-center text-xl">
-				<FaBars
+				<HiMenuAlt2
 					className="text-white me-1 cursor-pointer text-3xl"
 					onClick={() => setSidebarToggle(!sidebarToggle)}
 				/>
@@ -31,7 +26,7 @@ const Navbar = ({ sidebarToggle, setSidebarToggle, setQuery }) => {
 			</div>
 
 			<div className="flex items-center gap-x-1 lg:gap-x-5">
-				<div
+				{/* <div
 					className={`relative md:w-65 w-40 lg:w-60 ${
 						isSearchPage ? "block" : "hidden"
 					}`}>
@@ -46,7 +41,7 @@ const Navbar = ({ sidebarToggle, setSidebarToggle, setQuery }) => {
 						placeholder="Search..."
 						onChange={handleSearchChange}
 					/>
-				</div>
+				</div> */}
 
 				{/* <div className="text-white">
                     <FaBell className="w-5 h-5 lg:w-6 lg:h-6" />

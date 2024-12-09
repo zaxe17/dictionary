@@ -64,7 +64,52 @@ export const WORDS = [
                     "A metaphor for a psychological burden or obstacle.",
                     "A symbol of endurance in literature and folklore."
                 ],
-            }
+            },
+            {
+                word: "Ambush",
+                pronounce: "am-boosh",
+                desc: [
+                    "To make a surprise attack on someone or something from a hidden position.",
+                    "A trap in which concealed attackers lie in wait to surprise their target.",
+                    "A sudden and unexpected assault, typically used in warfare or hunting."
+                ],
+            },
+            {
+                word: "Abduct",
+                pronounce: "ab-duhkt",
+                desc: [
+                    "To take someone away illegally by force or deception; kidnap.",
+                    "To draw away a part of the body from its normal position.",
+                    "To carry off secretly or unlawfully, especially for personal gain or harm."
+                ],
+            },
+            {
+                word: "Adept",
+                pronounce: "uh-dept",
+                desc: [
+                    "Very skilled or proficient at something.",
+                    "An expert in a particular field or activity.",
+                    "Someone who is highly trained or talented in a specific area."
+                ],
+            },
+            {
+                word: "Aware",
+                pronounce: "uh-wair",
+                desc: [
+                    "Having knowledge or perception of a situation or fact.",
+                    "Conscious or mindful of something, especially a potential danger or issue.",
+                    "Informed or up-to-date with current events or circumstances."
+                ],
+            },
+            {
+                word: "Apex",
+                pronounce: "ay-peks",
+                desc: [
+                    "The top or highest part of something, especially one forming a point.",
+                    "The peak or culmination of a particular activity or career.",
+                    "The most successful or powerful moment in a person's life or an event."
+                ],
+            }, 
         ]
     },
     {
@@ -132,7 +177,61 @@ export const WORDS = [
                     "A symbol of transformation and beauty.",
                     "An organism in the order Lepidoptera."
                 ],
-            }
+            },
+            {
+                word: "Beam",
+                pronounce: "beem",
+                desc: [
+                    "A long, sturdy piece of wood or metal used to support weight in construction.",
+                    "A ray or stream of light or energy, such as a sunbeam or laser beam.",
+                    "A wide and happy smile that radiates joy or pride."
+                ],
+            },
+            {
+                word: "Bait",
+                pronounce: "bayt",
+                desc: [
+                    "Something used to attract or tempt someone or something, especially to catch fish or animals.",
+                    "To intentionally provoke or annoy someone.",
+                    "To lure or entice someone into a trap or difficult situation."
+                ],
+            },
+            {
+                word: "Blister",
+                pronounce: "blis-ter",
+                desc: [
+                    "A small bubble on the skin filled with fluid, caused by friction, burns, or irritation.",
+                    "A raised area on a surface caused by heat or damage, such as on paint or plastic.",
+                    "To form blisters or cause blisters to appear, often due to irritation or heat."
+                ],
+            },
+            {
+                word: "Bias",
+                pronounce: "bahy-uhs",
+                desc: [
+                    "An inclination or preference for or against something, often in a way that is unfair.",
+                    "A diagonal line or direction, especially in fabric or design.",
+                    "A systematic error or deviation in data, often leading to skewed results."
+                ],
+            },
+            {
+                word: "Boost",
+                pronounce: "boost",
+                desc: [
+                    "To increase or improve something, such as performance, confidence, or energy.",
+                    "An act of raising or lifting someone or something to a higher position.",
+                    "To support or encourage something or someone in achieving success."
+                ],
+            },
+            {
+                word: "Blunt",
+                pronounce: "bluhnt",
+                desc: [
+                    "Not sharp, having a dull edge or point.",
+                    "Straightforward or frank in speech, often to the point of being harsh.",
+                    "To make less sharp or weaken the effectiveness of something."
+                ],
+            },     
         ]
     },    
     {
@@ -200,7 +299,61 @@ export const WORDS = [
                     "A popular dish in many cuisines.",
                     "A symbol of abundance or food production."
                 ],
-            }
+            },
+            {
+                word: "Canister",
+                pronounce: "kan-iss-ter",
+                desc: [
+                    "A small container, typically used for storing food or other items.",
+                    "A cylindrical container used for holding liquids, gases, or powder.",
+                    "A type of container used in kitchens or laboratories for storage, often airtight."
+                ],
+            },
+            {
+                word: "Cable",
+                pronounce: "kay-bul",
+                desc: [
+                    "A strong, thick wire or group of wires used for transmitting electricity or signals.",
+                    "A bundle of fibers, wires, or cords used for various purposes such as internet, TV, or telephone connections.",
+                    "A rope made of twisted metal wires, often used for support or to lift heavy objects."
+                ],
+            },
+            {
+                word: "Cinema",
+                pronounce: "sin-uh-muh",
+                desc: [
+                    "A place where movies are shown, typically a theater or movie hall.",
+                    "The art or industry of making films and movies for entertainment or educational purposes.",
+                    "The medium or format of film as a form of visual storytelling or artistic expression."
+                ],
+            },
+            {
+                word: "Cane",
+                pronounce: "kayn",
+                desc: [
+                    "A tall, slender plant often used to make furniture, walking sticks, or baskets.",
+                    "A sturdy stick used for walking or support, often associated with older people or those with disabilities.",
+                    "The flexible, cylindrical stem of certain plants, especially sugarcane, used for various purposes like sweetener extraction."
+                ],
+            },
+            {
+                word: "Couch",
+                pronounce: "kouch",
+                desc: [
+                    "A comfortable piece of furniture designed for sitting or lying down, usually with cushions.",
+                    "To express something in a particular way, often in terms of language or emotions (e.g., 'to couch a statement').",
+                    "A piece of furniture typically found in living rooms or lounges for relaxing and socializing."
+                ],
+            },
+            {
+                word: "Coast",
+                pronounce: "kohst",
+                desc: [
+                    "To move easily without using much effort, often downhill or on a slope.",
+                    "The land beside the sea, often referring to a region or the coastline.",
+                    "To continue at a steady pace without additional effort or intervention, especially after reaching a certain level of achievement."
+                ],
+            },            
         ]
     },    
     {
@@ -268,7 +421,61 @@ export const WORDS = [
                     "A common farm animal.",
                     "Often a symbol of adaptability and grace."
                 ],
-            }
+            },
+            {
+                word: "Discombobulate",
+                pronounce: "dis-kuhm-BOB-yuh-layt",
+                desc: [
+                    "To confuse or disconcert someone.",
+                    "To upset or frustrate the normal functioning of something.",
+                    "To throw into a state of chaos or disorder."
+                ],
+            },
+            {
+                word: "Dodge",
+                pronounce: "dawj",
+                desc: [
+                    "To avoid something by moving quickly or suddenly.",
+                    "To evade a question or responsibility cleverly.",
+                    "A quick, evasive movement to escape or avoid."
+                ],
+            },
+            {
+                word: "Diary",
+                pronounce: "DAI-uh-ree",
+                desc: [
+                    "A personal record of daily events, thoughts, and feelings.",
+                    "A book or digital medium used for recording appointments or schedules.",
+                    "A private journal where one writes about experiences or reflections."
+                ],
+            },
+            {
+                word: "Deaf",
+                pronounce: "def",
+                desc: [
+                    "Lacking the power of hearing or having impaired hearing.",
+                    "Unwilling or unable to hear or consider someone's point of view.",
+                    "A term used to describe a community with shared language and culture, often sign language."
+                ],
+            },
+            {
+                word: "Dome",
+                pronounce: "dohm",
+                desc: [
+                    "A rounded vault forming the roof of a building or structure.",
+                    "A geological formation shaped like a dome, often from volcanic activity.",
+                    "A large hemispherical structure used as a sports arena or planetarium."
+                ],
+            },
+            {
+                word: "Damp",
+                pronounce: "damp",
+                desc: [
+                    "Slightly wet or moist, often in an unpleasant way.",
+                    "To diminish or reduce the intensity of something, such as enthusiasm.",
+                    "A condition of being somewhat wet, often due to humidity."
+                ],
+            },            
         ]
     },    
     {
@@ -1782,6 +1989,13 @@ export const BOOKS = [
     {
         title: "jan marc",
         author: "jacolbia",
+        genre: "Fiction",
+        description: "An inspiring tale of resilience.",
     },
-    
+    {
+        title: "soberano",
+        author: "hey",
+        genre: "Action",
+        description: "An inspiring tale of resilience.",
+    }
 ]
