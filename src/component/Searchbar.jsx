@@ -92,7 +92,7 @@ const Searchbar = () => {
 			{activeSearch.length > 0 && (
 				<div className="absolute top-20 p-2 bg-teal-500 text-white w-full rounded-xl left-1/2 -translate-x-1/2 flex flex-col gap-2">
 					{activeSearch.map((result, index) => (
-						<div key={index} className="flex flex-col hover:bg-teal-400 p-1 rounded-md">
+						<div key={index} className="flex flex-col hover:bg-teal-400 p-1 rounded-md shadow-sm">
 							{result.word ? (
 								<span
 									className="font-bold cursor-pointer"
