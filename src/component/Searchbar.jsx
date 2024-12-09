@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { WORDS, BOOKS } from "../words";
-import Popup from "../content/Popup";
+import Popup from "./Popup";
 import { motion } from "framer-motion";
 
 const Searchbar = () => {
@@ -19,7 +19,7 @@ const Searchbar = () => {
 
 		const filteredWords = WORDS.map((letterObj) =>
 			letterObj.description
-				.filter((desc) => desc.word.toLowerCase().includes(searchQuery))
+				.filter((desc) => desc.word.toLowerCase().startsWith(searchQuery))
 				.map((desc) => ({
 					word: desc.word,
 					pronounce: desc.pronounce,
@@ -28,7 +28,7 @@ const Searchbar = () => {
 		).flat();
 
 		const filteredBooks = BOOKS.filter((book) =>
-			book.title.toLowerCase().includes(searchQuery)
+			book.title.toLowerCase().startsWith(searchQuery)
 		).map((book) => ({
 			title: book.title,
 			author: book.author,
@@ -53,10 +53,12 @@ const Searchbar = () => {
 	};
 
 	return (
-		<motion.form className="w-[300px] lg:w-[500px] relative" whileInView={{ opacity: 1, y: 0 }}
-		initial={{ opacity: 0, y: 50 }}
-		transition={{ duration: 0.5 }}>
-			<div className="relative">
+		<form className="w-[300px] lg:w-[500px] relative">
+			<motion.div
+				whileInView={{ opacity: 1, width: "100%" }}
+				initial={{ opacity: 0, width: 0 }}
+				transition={{ duration: 1 }}
+				className="relative">
 				<input
 					type="search"
 					placeholder="Search..."
@@ -66,10 +68,10 @@ const Searchbar = () => {
 				<button className="absolute h-auto w-auto right-[0.15rem] lg:right-1 top-1/2 -translate-y-1/2 p-2 lg:p-4 text-teal-900 bg-teal-500 rounded-full flex justify-center items-center">
 					<FaSearch />
 				</button>
-			</div>
+			</motion.div>
 
 			{activeSearch.length > 0 && (
-				<div className="absolute top-20 p-4 bg-teal-600 text-white w-full rounded-xl left-1/2 -translate-x-1/2 flex flex-col gap-2">
+				<div className="absolute top-20 p-4 bg-teal-500 text-white w-full rounded-xl left-1/2 -translate-x-1/2 flex flex-col gap-2">
 					{activeSearch.map((result, index) => (
 						<div key={index} className="flex flex-col">
 							{result.word ? (
@@ -128,7 +130,7 @@ const Searchbar = () => {
 			<Popup open={isPopupOpen} onClose={closePopup}>
 				{popupContent}
 			</Popup>
-		</motion.form>
+		</form>
 	);
 };
 

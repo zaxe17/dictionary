@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Sidebar from "./content/Sidebar";
+import Sidebar from "./component/Sidebar";
 import Dashboard from "./content/Dashboard";
 import { BrowserRouter as Router } from "react-router-dom";
 
