@@ -30,7 +30,7 @@ const Popup = ({ open, onClose, children }) => {
 					onClick={onClose}>
 					<FaCompressArrowsAlt />
 				</button>
-				<div className="overflow-y-scroll h-full">{children}</div>
+				<div className="overflow-y-scroll h-full scroll-hidden">{children}</div>
 			</div>
 		</div>
 	);

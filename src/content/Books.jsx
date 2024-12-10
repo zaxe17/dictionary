@@ -9,7 +9,7 @@ const getFilteredItems = (query, items) => {
 	}
 
 	return items.filter((item) =>
-		item.title.toLowerCase().includes(query.toLowerCase()) || 
+		item.title.toLowerCase().includes(query.toLowerCase()) ||
 		item.author.toLowerCase().includes(query.toLowerCase()) ||
 		item.genre.toLowerCase().includes(query.toLowerCase()) ||
 		item.description.toLowerCase().includes(query.toLowerCase())
