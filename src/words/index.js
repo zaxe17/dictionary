@@ -1,3 +1,7 @@
+import GRAY_WHITE_MINIMALIS from "../assets/Gray White Minimalist Thriller Book Cover.png"
+import BLACK_AND_WHITE_MODERN from "../assets/Black And White  Modern Alone Story Book Cover.png"
+import BROWN_AND_BLUE_WIZARD from "../assets/Brown and Blue Wizard Fantasy Novel Book Cover.png"
+
 export const WORDS = [
     {
         letter: 'aa',
@@ -3156,16 +3160,25 @@ export const WORDS = [
 ]
 
 export const BOOKS = [
-    {
-        title: "jan marc",
+    {   
+        cover: GRAY_WHITE_MINIMALIS,
+        title: "Gray White Minimalist",
         author: "jacolbia",
         genre: "Fiction",
-        description: "An inspiring tale of resilience.",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..",
     },
-    {
-        title: "soberano",
-        author: "hey",
-        genre: "Action",
-        description: "An inspiring tale of resilience.",
-    }
+    {   
+        cover: BLACK_AND_WHITE_MODERN,
+        title: "Black And White Modern Alone",
+        author: "jacolbia",
+        genre: "Fiction",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..",
+    },
+    {   
+        cover: BROWN_AND_BLUE_WIZARD,
+        title: "Brown and Blue Wizard Fantasy Novel",
+        author: "jacolbia",
+        genre: "Fiction",
+        description: "Brown and Blue Wizard is a captivating fantasy novel set in a world of ancient magic and mystical creatures. The story follows a young, reluctant hero who must master both earthy brown and ethereal blue magic to protect their kingdom from an impending dark force. Along the way, they navigate treacherous alliances, uncover secrets, and face powerful adversaries. With rich world-building and deep character development, the novel explores themes of self-discovery, power, and the battle between light and darkness. A must-read for fans of adventure and magical worlds.",
+    },
 ]

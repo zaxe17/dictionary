@@ -31,10 +31,13 @@ const Searchbar = () => {
 		).flat();
 
 		const filteredBooks = BOOKS.filter((book) =>
-			book.title.toLowerCase().startsWith(searchQuery)
+			book.title.toLowerCase().includes(searchQuery)
 		).map((book) => ({
+			cover: book.cover,
 			title: book.title,
 			author: book.author,
+			genre: book.genre,
+			descriptoin: book.description
 		}));
 
 		const combinedResults = [...filteredWords, ...filteredBooks].slice(
@@ -92,7 +95,9 @@ const Searchbar = () => {
 			{activeSearch.length > 0 && (
 				<div className="absolute top-20 p-2 bg-teal-400 text-white w-full rounded-xl left-1/2 -translate-x-1/2 flex flex-col gap-2">
 					{activeSearch.map((result, index) => (
-						<div key={index} className="flex flex-col hover:bg-teal-300 p-1 rounded-md hover:shadow-sm">
+						<div
+							key={index}
+							className="flex flex-col hover:bg-teal-300 p-1 rounded-md hover:shadow-sm">
 							{result.word ? (
 								<span
 									className="font-bold cursor-pointer"
@@ -128,14 +133,38 @@ const Searchbar = () => {
 									className="font-bold cursor-pointer"
 									onClick={() =>
 										openPopup(
-											<>
-												<h3 className="text-xl font-bold">
-													{result.title}
-												</h3>
-												<p className="italic">
-													{result.author}
-												</p>
-											</>
+											<div className="lg:w-1/2 h-5/6 lg:h-auto">
+												<div className="flex flex-wrap lg:items-center">
+													<div className="w-1/2">
+														<img
+															src={result.cover}
+															alt=""
+														/>
+													</div>
+													<div
+														className="lg:w-1/2 p-12 overflow-y-scroll"
+														style={{
+															maxHeight:
+																"calc(80vh - 3rem)",
+														}}>
+														<h2 className="capitalize lg:text-3xl text-teal-800 font-bold mt-5">
+															{result.title}
+														</h2>
+														<p className="font-thin italic capitalize">
+															{result.author}
+														</p>
+														<p className="font-thin italic capitalize  mb-5">
+															{result.genre}
+														</p>
+														<p className="mb-5 lg:text-md">
+															{result.description}
+														</p>
+														<button className="mb-5 py-1 bg-red-500 text-sm lg:px-4 lg:py-2 lg:text-xl text-white">
+															Read
+														</button>
+													</div>
+												</div>
+											</div>
 										)
 									}>
 									Book: {result.title}

@@ -98,7 +98,7 @@ const Dictionary = () => {
 				</h1>
 			)}
 
-			<Popup open={open} onClose={handleClosePopup}>
+			<Popup open={open} onClose={handleClosePopup} page="dictionary">
 				{selectedWord && (
 					<div className="w-fit mx-auto my-4 max-w-full">
 						<div className="sticky top-0 bg-teal-100 z-10">
