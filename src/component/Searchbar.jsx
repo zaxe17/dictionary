@@ -74,14 +74,14 @@ const Searchbar = () => {
 	return (
 		<form ref={searchBarRef} className="w-[300px] lg:w-[500px] relative">
 			<motion.div
-				whileInView={{ opacity: 1, width: "100%" }}
-				initial={{ opacity: 0, width: 0 }}
+				whileInView={{ width: "100%" }}
+				initial={{ width: "11%" }}
 				transition={{ duration: 1 }}
 				className="relative">
 				<input
 					type="search"
 					placeholder="Search..."
-					className="w-full h-9 lg:h-full p-4 rounded-full bg-teal-400 shadow outline-none placeholder-teal-700 focus:text-white text-teal-900"
+					className="w-full h-9 lg:h-full p-4 rounded-full bg-teal-400 shadow-xl outline-none placeholder-teal-700 focus:text-white text-teal-900"
 					onChange={(e) => handleSearch(e)}
 				/>
 				<button className="absolute h-auto w-auto right-[0.15rem] lg:right-1 top-1/2 -translate-y-1/2 p-2 lg:p-4 text-teal-900 bg-teal-500 rounded-full flex justify-center items-center">
@@ -90,9 +90,9 @@ const Searchbar = () => {
 			</motion.div>
 
 			{activeSearch.length > 0 && (
-				<div className="absolute top-20 p-2 bg-teal-500 text-white w-full rounded-xl left-1/2 -translate-x-1/2 flex flex-col gap-2">
+				<div className="absolute top-20 p-2 bg-teal-400 text-white w-full rounded-xl left-1/2 -translate-x-1/2 flex flex-col gap-2">
 					{activeSearch.map((result, index) => (
-						<div key={index} className="flex flex-col hover:bg-teal-400 p-1 rounded-md shadow-sm">
+						<div key={index} className="flex flex-col hover:bg-teal-300 p-1 rounded-md hover:shadow-sm">
 							{result.word ? (
 								<span
 									className="font-bold cursor-pointer"

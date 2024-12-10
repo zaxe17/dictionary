@@ -10,13 +10,13 @@ const Search = ({ setQuery }) => {
 	return (
 		<form className="w-[300px] lg:w-[500px] fixed z-10">
 			<motion.div
-				whileInView={{ opacity: 1, width: "100%" }}
-				initial={{ opacity: 0, width: 0 }}
+				whileInView={{ width: "100%" }}
+				initial={{ width: "11%" }}
 				transition={{ duration: 1 }}
 				className="relative">
 				<input
 					type="text"
-					className="w-full h-9 lg:h-full p-4 rounded-full bg-teal-400 shadow outline-none placeholder-teal-700 focus:text-white text-teal-900"
+					className="w-full h-9 lg:h-full p-4 rounded-full bg-teal-400 shadow-xl outline-none placeholder-teal-700 focus:text-white text-teal-900"
 					placeholder="Search..."
 					onChange={handleSearchChange}
 				/>

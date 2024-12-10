@@ -8,7 +8,7 @@
 
 @layer components {
     ::-webkit-scrollbar {
-        width: 5px;
+        width: 8px;
     }
 
     ::-webkit-scrollbar-track {
@@ -16,7 +16,7 @@
     }
 
     ::-webkit-scrollbar-thumb {
-        background-color: #93ffd7;
+        background-color: #00ffa2;
         border-radius: 50px;
     }
 }

@@ -1,6 +1,6 @@
 export const WORDS = [
     {
-        letter: 'a',
+        letter: 'aa',
         description: [
             {
                 word: "apple",
@@ -113,7 +113,7 @@ export const WORDS = [
         ]
     },
     {
-        letter: 'b',
+        letter: 'bb',
         description: [
             {
                 word: "banana",
@@ -235,7 +235,7 @@ export const WORDS = [
         ]
     },
     {
-        letter: 'c',
+        letter: 'cc',
         description: [
             {
                 word: "cat",
@@ -357,7 +357,7 @@ export const WORDS = [
         ]
     },
     {
-        letter: 'd',
+        letter: 'dd',
         description: [
             {
                 word: "dog",
@@ -479,7 +479,7 @@ export const WORDS = [
         ]
     },
     {
-        letter: 'e',
+        letter: 'ee',
         description: [
             {
                 word: "eagle",
@@ -601,7 +601,7 @@ export const WORDS = [
         ]
     },
     {
-        letter: 'f',
+        letter: 'ff',
         description: [
             {
                 word: "fish",
@@ -723,7 +723,7 @@ export const WORDS = [
         ]
     },
     {
-        letter: 'g',
+        letter: 'gg',
         description: [
             {
                 word: "grape",
@@ -845,7 +845,7 @@ export const WORDS = [
         ]
     },
     {
-        letter: 'h',
+        letter: 'hh',
         description: [
             {
                 word: "house",
@@ -910,10 +910,64 @@ export const WORDS = [
                     "A symbol of sweetness and nourishment."
                 ],
             },
+            {
+                word: "Hobo",
+                pronounce: "hoh-boh",
+                desc: [
+                    "A person without a permanent home who often wanders from place to place.",
+                    "Sometimes referred to as a 'vagrant' or 'tramp'.",
+                    "Often associated with people in need of assistance who live on the streets."
+                ]
+            },
+            {
+                word: "Hack",
+                pronounce: "hak",
+                desc: [
+                    "To cut or chop something, usually with a sharp instrument.",
+                    "In technology, it refers to unauthorized access to systems or accounts.",
+                    "Can also refer to a quick, often improvised solution to a problem."
+                ]
+            },
+            {
+                word: "Helix",
+                pronounce: "hee-liks",
+                desc: [
+                    "A shape that resembles a spiral or a helical staircase.",
+                    "Used in science and mathematics to describe a spiral shape.",
+                    "An example of this is DNA, which has a helical structure."
+                ]
+            },
+            {
+                word: "Heal",
+                pronounce: "heel",
+                desc: [
+                    "The process of recovering or getting better from an illness or injury.",
+                    "Can refer to both physical and emotional recovery.",
+                    "It can also mean 'to make someone or something well again.'"
+                ]
+            },
+            {
+                word: "Hiatus",
+                pronounce: "hahy-ay-tuhs",
+                desc: [
+                    "A period of rest or pause from normal activities.",
+                    "Often used to describe a break or stop in work, a show, or a project.",
+                    "Also refers to a gap or space between things."
+                ]
+            },
+            {
+                word: "Hiccup",
+                pronounce: "hik-uhp",
+                desc: [
+                    "An involuntary contraction of the diaphragm that produces a 'hic' sound.",
+                    "Commonly happens after eating or drinking too quickly.",
+                    "Typically considered a minor, though sometimes annoying, condition."
+                ]
+            },
         ]
     },
     {
-        letter: 'i',
+        letter: 'ii',
         description: [
             {
                 word: "ice",
@@ -977,11 +1031,74 @@ export const WORDS = [
                     "A mental conception or innovation.",
                     "A symbol of creativity and inspiration."
                 ],
-            }
+            },
+            {
+                word: "Icon",
+                pronounce: "ahy-kon",
+                desc: [
+                    "A symbol or image that represents something or someone.",
+                    "A person who is highly admired or recognized for their achievements.",
+                    "In technology, it refers to a small graphical representation on a computer screen."
+                ]
+            },
+            {
+                word: "Idol",
+                pronounce: "ahy-dl",
+                desc: [
+                    "A person who is greatly admired or revered, often by fans or followers.",
+                    "Can refer to a statue or image worshiped as a god in religious contexts.",
+                    "Also used metaphorically to describe something or someone highly admired."
+                ]
+            },
+            {
+                word: "Impact",
+                pronounce: "im-pakt",
+                desc: [
+                    "The strong effect or influence something has on a person, situation, or environment.",
+                    "To hit or strike something with force.",
+                    "Often used to describe the effect of an event or action on a larger scale."
+                ]
+            },
+            {
+                word: "Influence",
+                pronounce: "in-floo-uhns",
+                desc: [
+                    "The capacity to have an effect on the character, development, or behavior of someone or something.",
+                    "Can refer to the power or authority that someone has to sway others' decisions.",
+                    "It can also describe the ability to shape or change outcomes through subtle actions."
+                ]
+            },
+            {
+                word: "Itch",
+                pronounce: "ich",
+                desc: [
+                    "A sensation on the skin that causes the desire to scratch.",
+                    "Can be caused by irritation, allergies, or certain skin conditions.",
+                    "Sometimes used metaphorically to describe a strong urge or desire for something."
+                ]
+            },
+            {
+                word: "Isolate",
+                pronounce: "ahy-suh-leyt",
+                desc: [
+                    "To separate something or someone from others.",
+                    "In science, it refers to separating a specific organism or substance for study.",
+                    "To exclude or set apart from others, often to avoid contact or influence."
+                ]
+            },
+            {
+                word: "Imago",
+                pronounce: "ih-mey-goh",
+                desc: [
+                    "The final, adult stage in the life cycle of an insect, such as a butterfly.",
+                    "In psychology, refers to an idealized image or concept of a person or thing.",
+                    "A term used in various scientific fields to describe a mature organism or model."
+                ]
+            },
         ]
     },
     {
-        letter: 'j',
+        letter: 'jj',
         description: [
             {
                 word: "jug",
@@ -1045,11 +1162,65 @@ export const WORDS = [
                     "Can refer to both physical and metaphorical travel.",
                     "A symbol of exploration and growth."
                 ],
-            }
+            },
+            {
+                word: "Jackass",
+                pronounce: "jak-as",
+                desc: [
+                    "A person who behaves foolishly or annoyingly.",
+                    "Also refers to a male donkey.",
+                    "Used informally to describe someone who is acting in a silly or stubborn way."
+                ]
+            },
+            {
+                word: "Jubilee",
+                pronounce: "joo-buh-lee",
+                desc: [
+                    "A special anniversary or celebration, often marking a significant event.",
+                    "A period of joy or celebration, often with festivities.",
+                    "In religious contexts, refers to a time of forgiveness and restoration, especially in Jewish tradition."
+                ]
+            },
+            {
+                word: "Jiggle",
+                pronounce: "jig-uhl",
+                desc: [
+                    "To move with small, quick movements, often shaking or wiggling.",
+                    "To cause something to shake or wobble.",
+                    "Can be used informally to describe the motion of something that is unstable or not fixed."
+                ]
+            },
+            {
+                word: "Janitor",
+                pronounce: "jan-i-ter",
+                desc: [
+                    "A person employed to clean and maintain buildings or facilities.",
+                    "Often responsible for tasks such as sweeping, mopping, and taking care of maintenance issues.",
+                    "May also be involved in minor repairs and managing cleaning supplies."
+                ]
+            },
+            {
+                word: "Jeep",
+                pronounce: "jeep",
+                desc: [
+                    "A small, rugged vehicle often used for off-road driving.",
+                    "Originally a military vehicle, now widely used for recreational and everyday purposes.",
+                    "Commonly associated with vehicles that can handle tough terrains."
+                ]
+            },
+            {
+                word: "Jog",
+                pronounce: "jog",
+                desc: [
+                    "To run at a steady, moderate pace, usually for exercise.",
+                    "Can also refer to a light, slow run that helps with endurance and fitness.",
+                    "In a metaphorical sense, it may refer to gently prompting or encouraging someone."
+                ]
+            },
         ]
     },
     {
-        letter: 'k',
+        letter: 'kk',
         description: [
             {
                 word: "kangaroo",
@@ -1113,11 +1284,65 @@ export const WORDS = [
                     "A term used to describe unfair or biased legal proceedings.",
                     "A symbol of injustice or illegitimacy."
                 ],
-            }
+            },
+            {
+                word: "Kibble",
+                pronounce: "kib-uhl",
+                desc: [
+                    "A type of dry food, often used for pets, especially dogs and cats.",
+                    "Typically small, pellet-shaped pieces of food designed for convenience.",
+                    "May also refer to similar processed food products used for animals."
+                ]
+            },
+            {
+                word: "Kill",
+                pronounce: "kil",
+                desc: [
+                    "To cause the death of a living organism.",
+                    "To end or terminate something, such as a project or task.",
+                    "In a figurative sense, can also mean to stop or eliminate something, like an idea or a plan."
+                ]
+            },
+            {
+                word: "Karma",
+                pronounce: "kahr-muh",
+                desc: [
+                    "A concept from Eastern religions where one's actions determine future events.",
+                    "Refers to the idea that good actions lead to positive outcomes, and bad actions lead to negative consequences.",
+                    "Can be used more casually to describe the idea of 'what goes around, comes around'."
+                ]
+            },
+            {
+                word: "Kick",
+                pronounce: "kik",
+                desc: [
+                    "To strike something with the foot, usually with force.",
+                    "Can also refer to the initial boost or push that starts something, like in 'kick-start'.",
+                    "In a figurative sense, can mean to encourage or motivate someone or something."
+                ]
+            },
+            {
+                word: "Kink",
+                pronounce: "kingk",
+                desc: [
+                    "A flaw or imperfection in a system or plan.",
+                    "A twist or bend in something, such as a rope or wire.",
+                    "In informal terms, can refer to a personal preference or quirk, often in a sexual context."
+                ]
+            },
+            {
+                word: "Keel",
+                pronounce: "keel",
+                desc: [
+                    "The central structure along the bottom of a boat or ship that provides stability.",
+                    "In aviation, refers to the vertical stabilizer that helps keep the plane steady.",
+                    "Can also mean to tilt or lean to one side, as in 'to keel over' (fall over)."
+                ]
+            },
         ]
     },
     {
-        letter: 'l',
+        letter: 'll',
         description: [
             {
                 word: "lion",
@@ -1181,11 +1406,65 @@ export const WORDS = [
                     "Found along coastlines or near dangerous waters.",
                     "A symbol of safety and guidance."
                 ],
-            }
+            },
+            {
+                word: "Libel",
+                pronounce: "lahy-buhl",
+                desc: [
+                    "A written or published false statement that harms someone's reputation.",
+                    "It is a form of defamation that can result in legal action.",
+                    "Typically involves false claims that damage a person's character or image."
+                ]
+            },
+            {
+                word: "Liar",
+                pronounce: "lahy-er",
+                desc: [
+                    "A person who tells lies or untruths.",
+                    "Someone who deliberately misrepresents the truth to deceive others.",
+                    "In some contexts, can refer to someone who habitually lies."
+                ]
+            },
+            {
+                word: "Loaf",
+                pronounce: "lohf",
+                desc: [
+                    "A shaped mass of bread that is typically baked as a whole.",
+                    "Can also refer to a portion of something, like a loaf of meat or cake.",
+                    "In a figurative sense, 'to loaf' means to relax or be lazy."
+                ]
+            },
+            {
+                word: "Lucid",
+                pronounce: "loo-sid",
+                desc: [
+                    "Clear and easy to understand, especially in communication.",
+                    "Describes thinking or expression that is coherent and logical.",
+                    "Can also refer to clarity in thought, especially during a time of confusion or illness."
+                ]
+            },
+            {
+                word: "Lair",
+                pronounce: "lehr",
+                desc: [
+                    "A secluded or hidden place where a wild animal lives, such as a den or cave.",
+                    "Can also refer to a hiding place or refuge, often used by criminals or secretive individuals.",
+                    "In literature, it may refer to the dwelling or home of a villain or monster."
+                ]
+            },
+            {
+                word: "Loop",
+                pronounce: "loop",
+                desc: [
+                    "A circular or curved shape, often forming a complete circuit or ring.",
+                    "In programming, it refers to a set of instructions that repeats until a certain condition is met.",
+                    "Can also describe a repetitive or continuous process, such as 'being stuck in a loop'."
+                ]
+            },
         ]
     },
     {
-        letter: 'm',
+        letter: 'mm',
         description: [
             {
                 word: "monkey",
@@ -1249,11 +1528,38 @@ export const WORDS = [
                     "Often associated with protests or parades.",
                     "A symbol of unity and determination."
                 ],
-            }
+            },
+            {
+                word: "Millennial",
+                pronounce: "mi-len-ee-uhl",
+                desc: [
+                    "A person born approximately between 1981 and 1996, often associated with being tech-savvy and diverse.",
+                    "The generation that came of age during the rise of the internet and digital technologies.",
+                    "Often stereotyped as being more focused on experiences and social issues compared to previous generations."
+                ]
+            },
+            {
+                word: "Modem",
+                pronounce: "moh-dem",
+                desc: [
+                    "A device that enables computers to connect to the internet or other networks through telephone lines or cable.",
+                    "Short for 'modulator-demodulator', it converts digital data into signals for transmission and vice versa.",
+                    "Can also refer to any device that facilitates data transmission over various communication mediums."
+                ]
+            },
+            {
+                word: "Melee",
+                pronounce: "mey-lei",
+                desc: [
+                    "A violent hand-to-hand combat or struggle, often involving multiple participants.",
+                    "In gaming, refers to close-range combat where characters physically attack each other.",
+                    "A chaotic or confused situation, often involving a lot of action or noise."
+                ]
+            },
         ]
     },
     {
-        letter: 'n',
+        letter: 'nn',
         description: [
             {
                 word: "nest",
@@ -1326,11 +1632,65 @@ export const WORDS = [
                     "Used by some Black people to refer to themselves or to another Black person in a neutral or positive way.",
                     "Used as a pronunciation spelling of nigger."
                 ],
-            }
+            },
+            {
+                word: "Nocturnal",
+                pronounce: "nok-tur-nuhl",
+                desc: [
+                    "Active or occurring during the night rather than the day.",
+                    "Often used to describe animals or creatures that are active at night, such as owls or bats.",
+                    "In humans, it can refer to individuals who prefer staying awake or being active at night."
+                ]
+            },
+            {
+                word: "Nation",
+                pronounce: "ney-shuhn",
+                desc: [
+                    "A large group of people who share a common culture, language, or history, and are typically governed by a single political authority.",
+                    "A country or political entity recognized as a sovereign state.",
+                    "Can also refer to a group of people united by common interests or goals."
+                ]
+            },
+            {
+                word: "Nibble",
+                pronounce: "nib-uhl",
+                desc: [
+                    "To take small bites of something, especially in a delicate or cautious manner.",
+                    "Often used to describe the action of animals or small creatures eating in small amounts.",
+                    "In a figurative sense, it can refer to a small interest or attempt at something, like 'nibbling at an idea.'"
+                ]
+            },
+            {
+                word: "Novel",
+                pronounce: "nov-uhl",
+                desc: [
+                    "A long written work of fiction, typically in prose form.",
+                    "Refers to a genre of literature that explores a wide range of characters, settings, and plots.",
+                    "Can also be used as an adjective to describe something new, unusual, or innovative."
+                ]
+            },
+            {
+                word: "Nasty",
+                pronounce: "nas-tee",
+                desc: [
+                    "Something unpleasant, offensive, or disgusting, often related to smells, actions, or behavior.",
+                    "Can refer to something harmful or dangerous, such as a 'nasty fall.'",
+                    "Used to describe a person who is rude, mean, or malicious in their actions or words."
+                ]
+            },
+            {
+                word: "Naive",
+                pronounce: "nah-eve",
+                desc: [
+                    "Having a lack of experience, wisdom, or judgment, often leading to overly simplistic or trusting views.",
+                    "Describes someone who is innocent or unaware of certain complexities or dangers.",
+                    "Can also refer to someone who is easily misled or deceived due to their lack of knowledge."
+                ]
+            },
         ]
     },
     {
-        letter: 'o',
+        letter: 'oo',
         description: [
             {
                 word: "orange",
@@ -1394,11 +1754,65 @@ export const WORDS = [
                     "Found abundantly in Earth's atmosphere.",
                     "A symbol of life and breathing."
                 ],
-            }
+            },
+            {
+                word: "Oppress",
+                pronounce: "uh-pres",
+                desc: [
+                    "To subject someone to harsh or authoritarian control, often resulting in suffering or injustice.",
+                    "To keep someone in a state of suppression or subjugation.",
+                    "Can refer to the exercise of power in a cruel or unjust manner, limiting freedom or rights."
+                ]
+            },
+            {
+                word: "Obedient",
+                pronounce: "oh-bee-dee-uhnt",
+                desc: [
+                    "Willing to comply with orders or instructions, or to follow rules and laws.",
+                    "Describes a person, animal, or system that responds to commands or authority.",
+                    "Often viewed as a positive trait in people who show respect for authority or structure."
+                ]
+            },
+            {
+                word: "Opaque",
+                pronounce: "oh-peyk",
+                desc: [
+                    "Not transparent or clear; difficult to see through.",
+                    "Can describe materials or surfaces that do not allow light to pass through.",
+                    "In a figurative sense, it can refer to something that is unclear, hard to understand, or ambiguous."
+                ]
+            },
+            {
+                word: "Ogre",
+                pronounce: "oh-ger",
+                desc: [
+                    "A mythical creature often depicted as a large, frightening monster, sometimes with a human-like appearance.",
+                    "Commonly found in folklore and fairy tales as a villain or antagonist.",
+                    "Used metaphorically to describe a person who is cruel, brutish, or monstrous in behavior."
+                ]
+            },
+            {
+                word: "Oracle",
+                pronounce: "aw-ree-kuhl",
+                desc: [
+                    "A person or thing that provides wise or prophetic advice, often linked to divination or ancient traditions.",
+                    "In ancient times, oracles were believed to communicate with gods and offer predictions or guidance.",
+                    "Can also refer to a source of insight or wisdom in modern contexts."
+                ]
+            },
+            {
+                word: "Omnivore",
+                pronounce: "om-ni-vawr",
+                desc: [
+                    "An organism that eats both plants and animals as part of its diet.",
+                    "Humans, bears, and pigs are examples of omnivores.",
+                    "Omnivores have a varied diet, consuming a wide range of food sources."
+                ]
+            },
         ]
     },
     {
-        letter: 'p',
+        letter: 'pp',
         description: [
             {
                 word: "pizza",
@@ -1462,11 +1876,65 @@ export const WORDS = [
                     "Used in cooking, especially in pies and soups.",
                     "A symbol of harvest and festivity."
                 ],
-            }
+            },
+            {
+                word: "Pore",
+                pronounce: "pawr",
+                desc: [
+                    "A tiny opening on the surface of the skin or other materials, often allowing the passage of air or liquid.",
+                    "In biology, refers to the small holes in plant leaves or the skin of animals.",
+                    "To examine or study something closely, as in 'to pore over a book'."
+                ]
+            },
+            {
+                word: "Precious",
+                pronounce: "presh-uhs",
+                desc: [
+                    "Something highly valued or cherished, often because it is rare or beautiful.",
+                    "Used to describe a person or thing that is deeply loved or regarded with great affection.",
+                    "Can also refer to something that is of great importance or worth, such as 'precious memories'."
+                ]
+            },
+            {
+                word: "Pile",
+                pronounce: "pahyl",
+                desc: [
+                    "A stack or heap of things, typically arranged one on top of the other.",
+                    "Can refer to a large quantity or amount of something, like 'a pile of books'.",
+                    "In construction, refers to a long column of material driven into the ground to support a structure."
+                ]
+            },
+            {
+                word: "Poem",
+                pronounce: "poh-uhm",
+                desc: [
+                    "A piece of writing that expresses thoughts, feelings, or ideas in a specific, often rhythmic, format.",
+                    "Typically uses figurative language, such as metaphors and similes, to convey emotions.",
+                    "Can be written in many forms, including free verse, sonnets, and haikus."
+                ]
+            },
+            {
+                word: "Plague",
+                pronounce: "pleyg",
+                desc: [
+                    "A widespread disease or calamity that causes widespread suffering or destruction.",
+                    "Can also refer to any overwhelming or persistent problem, such as a 'plague of locusts'.",
+                    "Historically, it often refers to deadly outbreaks of disease, such as the bubonic plague."
+                ]
+            },
+            {
+                word: "Praise",
+                pronounce: "preyz",
+                desc: [
+                    "To express admiration or approval for someone or something.",
+                    "Often involves giving compliments or recognition for someone's achievements or qualities.",
+                    "Can also refer to an expression of thanks or gratitude, especially in a religious context."
+                ]
+            },
         ]
     },
     {
-        letter: 'q',
+        letter: 'qq',
         description: [
             {
                 word: "queen",
@@ -1530,11 +1998,65 @@ export const WORDS = [
                     "A slight trembling or shaking motion.",
                     "A symbol of readiness and precision."
                 ],
-            }
+            },
+            {
+                word: "Quail",
+                pronounce: "kweyl",
+                desc: [
+                    "A small, ground-dwelling bird, often found in fields or grasslands.",
+                    "To feel or show fear or hesitation, as in 'to quail at the thought of something'.",
+                    "Can also refer to a type of meat derived from the quail bird."
+                ]
+            },
+            {
+                word: "Quaff",
+                pronounce: "kwaf",
+                desc: [
+                    "To drink something, especially alcohol, in large quantities or with enjoyment.",
+                    "Used informally to describe drinking heartily or with gusto.",
+                    "Can also refer to drinking a beverage quickly, as in 'to quaff a pint of beer'."
+                ]
+            },
+            {
+                word: "Quake",
+                pronounce: "kweyk",
+                desc: [
+                    "To shake or tremble, often due to fear, cold, or an earthquake.",
+                    "Used to describe the shaking of the earth caused by seismic activity, as in 'a quake struck the city'.",
+                    "Can also refer to feeling a sudden, intense fear or shock."
+                ]
+            },
+            {
+                word: "Quad",
+                pronounce: "kwod",
+                desc: [
+                    "Short for 'quadrangle', often used to describe a rectangular or square courtyard, especially in a school or university setting.",
+                    "Refers to a four-wheeled vehicle, like a 'quad bike'.",
+                    "Can also be used to describe something with four parts or sections, like 'quadruple'."
+                ]
+            },
+            {
+                word: "Quibble",
+                pronounce: "kwib-uhl",
+                desc: [
+                    "To argue or raise objections about a trivial matter or detail.",
+                    "A petty or minor objection or complaint, often considered insignificant.",
+                    "To engage in a dispute over something of little importance or relevance."
+                ]
+            },
+            {
+                word: "Queer",
+                pronounce: "kwir",
+                desc: [
+                    "An umbrella term used to describe sexual orientations or gender identities that are not heterosexual or cisgender.",
+                    "Historically, used as a derogatory term, but has been reclaimed by many in the LGBTQ+ community.",
+                    "In a broader sense, can describe something unconventional or strange, as in 'a queer situation'."
+                ]
+            },
         ]
     },
     {
-        letter: 'r',
+        letter: 'rr',
         description: [
             {
                 word: "rabbit",
@@ -1598,11 +2120,65 @@ export const WORDS = [
                     "Known for their antlers and association with Christmas folklore.",
                     "A symbol of endurance and winter."
                 ],
-            }
+            },
+            {
+                word: "Rubber",
+                pronounce: "ruhb-er",
+                desc: [
+                    "A flexible, elastic material derived from latex, used in a variety of products such as tires, gloves, and erasers.",
+                    "Can refer to synthetic materials designed to imitate the properties of natural rubber.",
+                    "In British English, 'rubber' is a term for an eraser used for removing pencil marks."
+                ]
+            },
+            {
+                word: "Roam",
+                pronounce: "rohm",
+                desc: [
+                    "To wander or travel without a fixed destination or purpose.",
+                    "Often used to describe the action of moving freely, such as 'roaming the streets' or 'roaming the countryside'.",
+                    "Can also refer to the movement of animals or people who are not confined to one location."
+                ]
+            },
+            {
+                word: "Reluct",
+                pronounce: "ri-luhkt",
+                desc: [
+                    "A rare term, usually seen in the form 'reluctance,' which means unwillingness or hesitation to do something.",
+                    "To show resistance or a lack of enthusiasm to act or engage in something.",
+                    "Often used to describe the feeling of being unwilling or disinclined to proceed."
+                ]
+            },
+            {
+                word: "Rice",
+                pronounce: "rahyss",
+                desc: [
+                    "A staple food grain grown in many parts of the world, typically consumed as a primary carbohydrate source.",
+                    "Can be prepared in many ways, such as boiling, frying, or steaming.",
+                    "Used in a variety of cuisines around the world, such as Asian, Middle Eastern, and Latin American dishes."
+                ]
+            },
+            {
+                word: "Roast",
+                pronounce: "rohst",
+                desc: [
+                    "To cook food, especially meat, by exposing it to heat in an oven or over an open flame.",
+                    "Can also refer to the process of browning or toasting something, such as 'roasting vegetables.'",
+                    "In a figurative sense, 'to roast' someone means to humorously criticize or make fun of them, often in a playful manner."
+                ]
+            },
+            {
+                word: "Rage",
+                pronounce: "rayj",
+                desc: [
+                    "Intense, violent anger or fury, often leading to outbursts of aggression or emotion.",
+                    "Can also refer to a widespread or popular trend, such as 'the latest fashion rage.'",
+                    "Used to describe an uncontrollable emotion, or a period of extreme anger or frustration."
+                ]
+            },
         ]
     },
     {
-        letter: 's',
+        letter: 'ss',
         description: [
             {
                 word: "sun",
@@ -1666,11 +2242,65 @@ export const WORDS = [
                     "Used in construction, art, and tools.",
                     "A symbol of strength, endurance, and permanence."
                 ],
-            }
+            },
+            {
+                word: "Spike",
+                pronounce: "spahyk",
+                desc: [
+                    "A sharp, pointed object, often used in reference to something that pierces or pricks.",
+                    "To increase or rise sharply, such as a spike in temperature or prices.",
+                    "Can also refer to a sudden, intense attack or burst, like in sports or music (e.g., a volleyball spike)."
+                ]
+            },
+            {
+                word: "Shine",
+                pronounce: "shahyn",
+                desc: [
+                    "To emit light, especially in a bright or gleaming way, as the sun shines.",
+                    "To stand out or perform exceptionally well, as in 'to shine in a performance'.",
+                    "Can also mean to polish or make something smooth and reflective, as in 'shine your shoes'."
+                ]
+            },
+            {
+                word: "Splash",
+                pronounce: "splash",
+                desc: [
+                    "To cause something to scatter or spread by hitting a surface, often with liquid.",
+                    "A sound or action associated with water, like when something is dropped into a pool or puddle.",
+                    "Can also refer to making a bold or attention-grabbing impression, like 'a splash in the media'."
+                ]
+            },
+            {
+                word: "Soar",
+                pronounce: "sohr",
+                desc: [
+                    "To fly or rise high in the air, often used to describe birds or planes.",
+                    "To increase or grow rapidly, such as prices soaring or a person's popularity soaring.",
+                    "Can also describe a feeling of exhilaration or excitement, like in 'soaring spirits'."
+                ]
+            },
+            {
+                word: "Sting",
+                pronounce: "sting",
+                desc: [
+                    "To cause a sharp, often brief pain, usually from a bite, sting, or sharp object.",
+                    "To criticize or hurt someone's feelings with a cutting remark.",
+                    "Can also refer to the act of stinging, as in 'a bee sting'."
+                ]
+            },
+            {
+                word: "Skank",
+                pronounce: "skangk",
+                desc: [
+                    "A derogatory term, historically used to describe a person perceived as unpleasant or morally questionable.",
+                    "In dance or music, it refers to a style of dance associated with ska or reggae music.",
+                    "Can also describe a style of music, or in slang, an unsavory or undesirable person."
+                ]
+            },
         ]
     },
     {
-        letter: 't',
+        letter: 'tt',
         description: [
             {
                 word: "tree",
@@ -1734,11 +2364,65 @@ export const WORDS = [
                     "Known for its long lifespan and methodical pace.",
                     "A symbol of patience, wisdom, and resilience."
                 ],
-            }
+            },
+            {
+                word: "Teal",
+                pronounce: "teel",
+                desc: [
+                    "A medium to dark greenish-blue color, named after the common teal bird, which has a similar shade on its head.",
+                    "Often used in design and fashion, teal combines the calming properties of blue with the growth symbolism of green.",
+                    "Can also refer to a species of freshwater duck, the teal, known for its distinctive plumage."
+                ]
+            },
+            {
+                word: "Taboo",
+                pronounce: "tuh-boo",
+                desc: [
+                    "A social or cultural prohibition or restriction on a particular practice, object, or discussion.",
+                    "Something considered inappropriate, forbidden, or unacceptable in a certain society or community.",
+                    "Used in anthropology to refer to things that are off-limits or restricted based on cultural beliefs."
+                ]
+            },
+            {
+                word: "Tofu",
+                pronounce: "toh-foo",
+                desc: [
+                    "A food product made from soybeans, commonly used in vegetarian or vegan diets as a source of protein.",
+                    "Produced by curdling fresh soy milk and pressing it into blocks.",
+                    "Known for its versatility in cooking, tofu can be prepared in many ways, including stir-fried, grilled, or used in smoothies."
+                ]
+            },
+            {
+                word: "Tribe",
+                pronounce: "trahyb",
+                desc: [
+                    "A group of people, often with a common ancestry, language, or culture, who live together and follow a shared social structure.",
+                    "In anthropology, refers to a distinct social group with its own traditions, customs, and governance.",
+                    "Can also refer to a group of people united by a shared interest or activity, such as a 'tribe of musicians.'"
+                ]
+            },
+            {
+                word: "Toast",
+                pronounce: "tohst",
+                desc: [
+                    "Bread that has been browned by heat, typically in a toaster or oven.",
+                    "Can also refer to a ceremonial expression of good wishes, often involving the clinking of glasses in social gatherings.",
+                    "In slang, 'toast' can mean someone or something that is beyond help or has been defeated, as in 'he’s toast.'"
+                ]
+            },
+            {
+                word: "Truck",
+                pronounce: "truhk",
+                desc: [
+                    "A motor vehicle designed to transport goods or carry heavy loads, often larger than regular cars.",
+                    "Used in a variety of industries, from construction to delivery services.",
+                    "Can also refer to a small, wheeled vehicle used for moving heavy items, or even a type of bicycle (e.g., a pickup truck or food truck)."
+                ]
+            },
         ]
     },
     {
-        letter: 'u',
+        letter: 'uu',
         description: [
             {
                 word: "umbrella",
@@ -1802,11 +2486,65 @@ export const WORDS = [
                     "Common examples include forks, knives, and spoons.",
                     "A symbol of daily living and practicality."
                 ],
-            }
+            },
+            {
+                word: "Urban",
+                pronounce: "ur-buhn",
+                desc: [
+                    "Relating to or characteristic of a city or town.",
+                    "Often used to describe lifestyles, environments, or issues that are associated with cities or metropolitan areas.",
+                    "Can refer to urban culture, urban planning, or urban development, as opposed to rural or suburban areas."
+                ]
+            },
+            {
+                word: "Ulcer",
+                pronounce: "uhl-ser",
+                desc: [
+                    "A sore or wound that forms on the skin or mucous membranes, often caused by infection, irritation, or inflammation.",
+                    "Can refer to conditions like stomach ulcers, which occur in the lining of the stomach due to acid or bacterial infection.",
+                    "Sometimes used metaphorically to describe something that causes persistent pain or damage."
+                ]
+            },
+            {
+                word: "Utter",
+                pronounce: "uht-er",
+                desc: [
+                    "To speak or pronounce something aloud, often in a clear or deliberate manner.",
+                    "Used to describe something complete or absolute, such as in 'utter chaos' or 'utter nonsense.'",
+                    "Can also refer to the act of emitting sound or words, especially when doing so for the first time."
+                ]
+            },
+            {
+                word: "Utopia",
+                pronounce: "yoo-toh-pee-uh",
+                desc: [
+                    "An imagined place or state of things where everything is perfect and ideal.",
+                    "Often used in philosophy, politics, or literature to describe an ideal society or world.",
+                    "Can be used metaphorically to describe any dream or vision of a perfect situation."
+                ]
+            },
+            {
+                word: "Umber",
+                pronounce: "uhm-ber",
+                desc: [
+                    "A dark brown or reddish-brown color, often used in art and painting.",
+                    "Refers to a pigment that comes from earth, traditionally used in oil paints.",
+                    "Can also describe the shade of brown found in soil or rocks."
+                ]
+            },
+            {
+                word: "Umpire",
+                pronounce: "uhm-pahy-er",
+                desc: [
+                    "A person who oversees a game or sport, ensuring that the rules are followed and making decisions during the game.",
+                    "Commonly found in sports like baseball, cricket, and tennis, where they have the authority to make calls and resolve disputes.",
+                    "Can also be used metaphorically to describe someone who arbitrates or resolves conflicts."
+                ]
+            },
         ]
     },
     {
-        letter: 'v',
+        letter: 'vv',
         description: [
             {
                 word: "violin",
@@ -1870,11 +2608,65 @@ export const WORDS = [
                     "A symbol of triumph, achievement, and overcoming challenges.",
                     "Often celebrated in sports, wars, and personal accomplishments."
                 ],
-            }
+            },
+            {
+                word: "Veneer",
+                pronounce: "vuh-neer",
+                desc: [
+                    "A thin layer of material, often wood or plastic, applied to a surface for decorative or protective purposes.",
+                    "Can also refer to a superficial or deceptive appearance, as in 'a veneer of politeness.'",
+                    "In architecture and furniture making, veneer is often used to give the appearance of a more expensive material."
+                ]
+            },
+            {
+                word: "Vague",
+                pronounce: "vayg",
+                desc: [
+                    "Not clear or specific; lacking in detail or certainty.",
+                    "Often used to describe statements, descriptions, or feelings that are unclear or imprecise.",
+                    "Can also refer to a feeling or memory that is not fully formed or defined."
+                ]
+            },
+            {
+                word: "Vibe",
+                pronounce: "vahyb",
+                desc: [
+                    "A distinctive feeling, atmosphere, or mood that is created by a person, place, or thing.",
+                    "Often used informally to describe the overall 'energy' or emotional tone of a situation or environment.",
+                    "Can also refer to a person's attitude or demeanor, as in 'getting good vibes from someone.'"
+                ]
+            },
+            {
+                word: "Vocal",
+                pronounce: "voh-kuhl",
+                desc: [
+                    "Relating to the voice or speaking.",
+                    "Often used to describe someone who expresses their opinions loudly or clearly, as in 'a vocal supporter of the cause.'",
+                    "In music, refers to the part of a performance or composition that involves singing or the use of the human voice."
+                ]
+            },
+            {
+                word: "Vigil",
+                pronounce: "vij-uhl",
+                desc: [
+                    "A period of keeping watch or staying awake, often in a solemn or prayerful manner.",
+                    "Traditionally associated with waiting or observing for a significant event, such as a 'vigil for the deceased.'",
+                    "Can also refer to a peaceful demonstration or protest, where people gather to show support or raise awareness."
+                ]
+            },
+            {
+                word: "Vulgar",
+                pronounce: "vuhl-ger",
+                desc: [
+                    "Lacking refinement or taste; crude or offensive in manner, speech, or behavior.",
+                    "Often used to describe language, actions, or attitudes that are inappropriate, disrespectful, or offensive.",
+                    "In a historical or linguistic context, 'vulgar' can also refer to the common or everyday language spoken by ordinary people, as opposed to classical languages."
+                ]
+            },
         ]
     },
     {
-        letter: 'w',
+        letter: 'ww',
         description: [
             {
                 word: "whale",
@@ -1938,11 +2730,65 @@ export const WORDS = [
                     "A natural force that can be gentle or destructive.",
                     "A symbol of change, freedom, and nature."
                 ],
-            }
+            },
+            {
+                word: "Weiner",
+                pronounce: "wee-ner",
+                desc: [
+                    "A type of sausage, usually made from beef or pork, often associated with hot dogs.",
+                    "The term can also refer to a person with a German or Jewish background, originating from the German city of Vienna (Wien).",
+                    "Sometimes used informally as a slang term for a man or as a joke, especially in reference to the shape of the sausage."
+                ]
+            },
+            {
+                word: "Wobble",
+                pronounce: "wob-uhl",
+                desc: [
+                    "To move unsteadily from side to side, often due to a lack of balance or stability.",
+                    "Can also describe a shaky or unstable sound or appearance, as in 'a wobbling voice.'",
+                    "Used figuratively to describe uncertainty or indecisiveness, such as 'wobbling on a decision.'"
+                ]
+            },
+            {
+                word: "Weal",
+                pronounce: "weel",
+                desc: [
+                    "A term meaning well-being or prosperity, often used in the phrase 'the common weal,' referring to the general welfare.",
+                    "Can also refer to a raised mark or scar on the skin, often resulting from a blow or pressure.",
+                    "In historical contexts, 'weal' can also be used to describe the public good or collective happiness of a community."
+                ]
+            },
+            {
+                word: "Wade",
+                pronounce: "weyd",
+                desc: [
+                    "To walk through water, mud, or any other substance that impedes movement, typically with difficulty.",
+                    "Can refer to the action of crossing a body of water, like a stream or river, by walking through it.",
+                    "Also used metaphorically to describe taking slow or careful steps in a difficult situation, as in 'wading through paperwork.'"
+                ]
+            },
+            {
+                word: "Weak",
+                pronounce: "week",
+                desc: [
+                    "Lacking physical strength or energy, often used to describe someone or something that is fragile or not powerful.",
+                    "Can also refer to a lack of intensity or force, such as 'a weak argument' or 'a weak signal.'",
+                    "Used metaphorically to describe emotional or mental vulnerability, as in 'feeling weak in spirit.'"
+                ]
+            },
+            {
+                word: "Wither",
+                pronounce: "wih-thur",
+                desc: [
+                    "To shrivel, dry up, or die, often used to describe plants that lose vitality due to lack of water or nourishment.",
+                    "Can also refer to a decline or weakening of something, such as 'a relationship that has withered over time.'",
+                    "Used figuratively to describe a person or thing losing strength, vitality, or power."
+                ]
+            },
         ]
     },
     {
-        letter: 'x',
+        letter: 'xx',
         description: [
             {
                 word: "xylophone",
@@ -2006,11 +2852,65 @@ export const WORDS = [
                     "A key component of the plant's circulatory system.",
                     "A symbol of growth, nourishment, and nature."
                 ],
-            }
+            },
+            {
+                word: "Xenophile",
+                pronounce: "zen-uh-fahyl",
+                desc: [
+                    "A person who has a love or strong attraction to foreign cultures, people, or customs.",
+                    "Often used to describe individuals who embrace diversity and are open to experiencing different cultural traditions.",
+                    "Can also refer to someone who advocates for cultural exchange or globalization."
+                ]
+            },
+            {
+                word: "Xerophyte",
+                pronounce: "zeer-uh-fahyt",
+                desc: [
+                    "A plant species that is adapted to survive in dry conditions, typically found in arid environments.",
+                    "These plants have specialized features like thick leaves or deep roots to conserve water.",
+                    "Common examples of xerophytes include cacti, succulents, and certain types of grasses."
+                ]
+            },
+            {
+                word: "Xanthippe",
+                pronounce: "zan-thip-ee",
+                desc: [
+                    "A historical figure, the wife of the Greek philosopher Socrates, often depicted as a scolding or temperamental woman.",
+                    "The term 'Xanthippe' has come to be associated with a nagging or ill-tempered woman, though this portrayal is debated by historians.",
+                    "In modern usage, the term can be used to describe a woman with a sharp or harsh temperament."
+                ]
+            },
+            {
+                word: "Xebec",
+                pronounce: "zee-bek",
+                desc: [
+                    "A type of Mediterranean sailing ship, historically used for trade and military purposes, especially in the 17th and 18th centuries.",
+                    "Characterized by its narrow, three-masted design, often with a distinctive curved hull.",
+                    "Used by pirates, traders, and naval forces in the Mediterranean and along the coasts of North Africa and Europe."
+                ]
+            },
+            {
+                word: "Xenograft",
+                pronounce: "zen-oh-graft",
+                desc: [
+                    "A type of organ or tissue transplant from one species to another, often used in medical procedures.",
+                    "Also known as heterograft, xenografts are typically used in skin grafts or organ transplants when human tissue is unavailable.",
+                    "Common examples include the transplantation of pig heart valves into humans."
+                ]
+            },
+            {
+                word: "Xylotol",
+                pronounce: "zy-loh-tawl",
+                desc: [
+                    "A sugar alcohol used as a sweetener in food products, such as gum and candy, often considered a healthier alternative to sugar.",
+                    "It has fewer calories than regular sugar and does not cause a rapid spike in blood sugar levels.",
+                    "Xylotol is also known for its ability to prevent tooth decay, making it a popular ingredient in dental products."
+                ]
+            },
         ]
     },
     {
-        letter: 'y',
+        letter: 'yy',
         description: [
             {
                 word: "yellow",
@@ -2074,11 +2974,65 @@ export const WORDS = [
                     "Often used to describe colors or objects that are not purely yellow.",
                     "A symbol of light, subtlety, and warmth."
                 ],
-            }
+            },
+            {
+                word: "Yap",
+                pronounce: "yap",
+                desc: [
+                    "To talk incessantly or in a high-pitched manner, often used to describe a person or animal who is overly vocal.",
+                    "Commonly used to describe the sharp, quick bark of a small dog.",
+                    "Can also mean to complain or argue persistently, as in 'stop yapping!'"
+                ]
+            },
+            {
+                word: "Yearn",
+                pronounce: "yurn",
+                desc: [
+                    "To have a strong, intense desire or longing for something or someone.",
+                    "Often used to express a deep emotional or wistful longing, as in 'yearning for home.'",
+                    "Can also refer to a strong aspiration or ambition to achieve something."
+                ]
+            },
+            {
+                word: "Yodel",
+                pronounce: "yoh-dl",
+                desc: [
+                    "A type of singing that involves rapid changes in pitch, typically associated with Swiss and Austrian folk music.",
+                    "Often performed in mountainous regions, where the echo helps amplify the sound.",
+                    "Can also be used informally to describe shouting or calling in a distinctive way."
+                ]
+            },
+            {
+                word: "Yield",
+                pronounce: "yeeld",
+                desc: [
+                    "To produce or provide something, especially as a result of effort or process, such as 'this farm yields a good harvest.'",
+                    "In driving, it refers to giving the right of way to other vehicles or pedestrians.",
+                    "Can also mean to give up or surrender, as in 'yielding to pressure' or 'yielding in a conflict.'"
+                ]
+            },
+            {
+                word: "Yeast",
+                pronounce: "yeest",
+                desc: [
+                    "A type of fungus used in baking and brewing to ferment food and drink, especially to make bread rise.",
+                    "Used in the production of alcoholic beverages like beer and wine.",
+                    "Can also refer to the microorganisms themselves, which play a key role in fermentation and leavening processes."
+                ]
+            },
+            {
+                word: "Yank",
+                pronounce: "yangk",
+                desc: [
+                    "To pull something or someone abruptly and with force, as in 'yank the door open.'",
+                    "In American slang, 'yank' can refer to a person from the northern United States, often used colloquially.",
+                    "Can also be used to describe a quick, forceful action or change, such as 'yanking the chain.'"
+                ]
+            },
         ]
     },
     {
-        letter: 'z',
+        letter: 'zz',
         description: [
             {
                 word: "zebra",
@@ -2142,7 +3096,61 @@ export const WORDS = [
                     "A video conferencing platform for virtual meetings.",
                     "A symbol of speed, connection, and communication."
                 ],
-            }
+            },
+            {
+                word: "Zucchini",
+                pronounce: "zoo-kee-nee",
+                desc: [
+                    "A type of summer squash that is typically green and used as a vegetable in various dishes.",
+                    "Often served cooked, either grilled, sautéed, or baked, though it can also be eaten raw in salads.",
+                    "Sometimes called courgette in British English, it is a versatile vegetable commonly used in Italian and Mediterranean cuisine."
+                ]
+            },
+            {
+                word: "Zap",
+                pronounce: "zap",
+                desc: [
+                    "To strike or hit something suddenly and with force, often used in reference to electrical energy or a quick movement.",
+                    "Can also refer to the act of destroying or removing something quickly, as in 'zap the enemy.'",
+                    "In informal usage, can mean to do something quickly or energetically, such as 'zap through the list.'"
+                ]
+            },
+            {
+                word: "Zigzag",
+                pronounce: "zig-zag",
+                desc: [
+                    "A pattern of sharp turns or angles, moving back and forth in alternating directions.",
+                    "Often used to describe a path, line, or movement that goes back and forth, such as 'a zigzag trail through the forest.'",
+                    "In a figurative sense, can refer to something that proceeds in a non-linear or erratic manner."
+                ]
+            },
+            {
+                word: "Zombie",
+                pronounce: "zom-bee",
+                desc: [
+                    "A fictional, undead creature typically portrayed in horror stories, known for its slow movements and insatiable hunger for flesh.",
+                    "Can refer to a person who is lethargic, unaware, or unresponsive, as in 'feeling like a zombie after a long night.'",
+                    "In popular culture, zombies are often depicted in movies, video games, and books as reanimated corpses or mindless beings."
+                ]
+            },
+            {
+                word: "Zillion",
+                pronounce: "zil-yun",
+                desc: [
+                    "An extremely large, unspecified number, often used to exaggerate the vastness of something.",
+                    "Not a precise mathematical term, but used informally to describe an innumerable quantity, as in 'I've seen this a zillion times.'",
+                    "Can also be used in business or finance to describe vast sums of money, often to emphasize their enormous scale."
+                ]
+            },
+            {
+                word: "Zumba",
+                pronounce: "zoom-buh",
+                desc: [
+                    "A dance fitness program that combines Latin and international music with dance moves.",
+                    "Designed to be an energetic, fun workout that promotes cardiovascular health, flexibility, and strength.",
+                    "Founded in the 1990s, Zumba has become a popular group exercise activity worldwide."
+                ]
+            },
         ]
     },
 ]

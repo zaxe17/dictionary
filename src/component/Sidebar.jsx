@@ -16,7 +16,7 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle  }) => {
 					: "lg:translate-x-0 -translate-x-full"
 			} w-full lg:w-64 text-center lg:text-start bg-teal-600 fixed h-full px-4 py-2 transition-all duration-300 ease-in-out z-50`}>
 			<div className="my-2 mb-4">
-				<h1 className="text-2xl text-white font-bold">
+				<h1 className="text-2xl text-teal-50 font-bold">
 					<SiDictionarydotcom className="inline-block w-6 h-6 mr-2 -mt-2" />
 					Dictionary
 				</h1>
@@ -24,7 +24,7 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle  }) => {
 
 			<hr />
 
-			<ul className="mt-3 text-white font-bold">
+			<ul className="mt-3 text-teal-50 font-bold">
 				<li className="mb-2 rounded hover:shadow hover:bg-teal-500">
 					<Link
 						to="/"

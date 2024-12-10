@@ -17,10 +17,10 @@ const Navbar = ({ sidebarToggle, setSidebarToggle }) => {
 		<nav className="bg-teal-600 px-4 py-3 flex justify-between sticky top-0 w-full z-50">
 			<div className="flex items-center text-xl">
 				<HiMenuAlt2
-					className="text-white me-1 cursor-pointer text-3xl"
+					className="text-teal-200 me-1 cursor-pointer text-3xl"
 					onClick={() => setSidebarToggle(!sidebarToggle)}
 				/>
-				<span className="text-white font-semibold">{getTitle()}</span>
+				<span className="text-teal-50 font-semibold">{getTitle()}</span>
 			</div>
 
 			{/* <div className="flex items-center gap-x-1 lg:gap-x-5">
