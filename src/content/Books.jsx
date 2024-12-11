@@ -76,47 +76,61 @@ const Books = () => {
 
 			<Popup open={open} onClose={handleClosePopup} page="books">
 				{selectedBook && (
-					<div
-						className="flex flex-wrap lg:items-center"
-						style={{
-							backgroundColor: selectedBook.bgColor,
-						}}>
-						<div className="lg:w-1/2">
-							<img src={selectedBook.cover} alt="" />
-						</div>
-						<div
-							className="lg:w-1/2 p-12 overflow-y-scroll scroll-hidden"
-							style={{ maxHeight: "calc(80vh - 3rem)" }}>
-							<h2
-								className="capitalize lg:text-3xl font-bold mt-5"
-								style={{ color: selectedBook.textColor }}>
-								{selectedBook.title}
-							</h2>
-							<p
-								className="font-semibold italic capitalize lg:text-xl"
-								style={{ color: selectedBook.textColor }}>
-								Author:{" "}
-								<span className="font-thin">
-									{selectedBook.author}
-								</span>
-							</p>
-							<p
-								className="font-semibold italic capitalize lg:text-xl mb-5"
-								style={{ color: selectedBook.textColor }}>
-								Genre:{" "}
-								<span className="font-thin">
-									{selectedBook.genre}
-								</span>
-							</p>
-							<p
-								className="mb-5 text-sm lg:text-md"
-								style={{ color: selectedBook.textColor }}>
-								{selectedBook.description}
-							</p>
-							<button className="py-2 px-6 bg-teal-500 text-white rounded-lg text-md lg:text-lg shadow hover:bg-teal-600">
-								Read
-							</button>
-						</div>
+					<div>
+						{selectedBook.bgColor.map((bgColor, index) => (
+							<div
+								key={index}
+								className="book-background flex flex-wrap lg:items-center"
+								style={{
+									"--bg-color-default": bgColor.lg,
+									"--bg-color-mobile": bgColor.sm,
+								}}>
+								<div className="lg:w-1/2">
+									<img src={selectedBook.cover} alt="" />
+								</div>
+								<div
+									className="lg:w-1/2 p-12 overflow-y-scroll scroll-hidden"
+									style={{ maxHeight: "calc(80vh - 3rem)" }}>
+									<h2
+										className="capitalize lg:text-3xl font-bold mt-5"
+										style={{
+											color: selectedBook.textColor,
+										}}>
+										{selectedBook.title}
+									</h2>
+									<p
+										className="font-semibold italic capitalize lg:text-xl"
+										style={{
+											color: selectedBook.textColor,
+										}}>
+										Author:{" "}
+										<span className="font-thin">
+											{selectedBook.author}
+										</span>
+									</p>
+									<p
+										className="font-semibold italic capitalize lg:text-xl mb-5"
+										style={{
+											color: selectedBook.textColor,
+										}}>
+										Genre:{" "}
+										<span className="font-thin">
+											{selectedBook.genre}
+										</span>
+									</p>
+									<p
+										className="mb-5 text-sm lg:text-md"
+										style={{
+											color: selectedBook.textColor,
+										}}>
+										{selectedBook.description}
+									</p>
+									<button className="py-2 px-6 bg-teal-500 text-white rounded-lg text-md lg:text-lg shadow hover:bg-teal-600">
+										Read
+									</button>
+								</div>
+							</div>
+						))}
 					</div>
 				)}
 			</Popup>

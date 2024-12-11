@@ -3166,7 +3166,12 @@ export const BOOKS = [
         author: "jacolbia",
         genre: "Fiction",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..",
-        bgColor: "#575758",
+        bgColor: [
+            {
+                lg: "#575758",
+                sm: "#151513",
+            }
+        ],
         textColor: "#ffffff",
     },
     {   
@@ -3175,7 +3180,12 @@ export const BOOKS = [
         author: "jacolbia",
         genre: "Fiction",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..",
-        bgColor: "#232323",
+        bgColor: [
+            {
+                lg: "#232323",
+                sm: "#101010",
+            }
+        ],
         textColor: "#ffffff",
     },
     {   
@@ -3184,7 +3194,12 @@ export const BOOKS = [
         author: "jacolbia",
         genre: "Fiction",
         description: "Brown and Blue Wizard is a captivating fantasy novel set in a world of ancient magic and mystical creatures. The story follows a young, reluctant hero who must master both earthy brown and ethereal blue magic to protect their kingdom from an impending dark force. Along the way, they navigate treacherous alliances, uncover secrets, and face powerful adversaries. With rich world-building and deep character development, the novel explores themes of self-discovery, power, and the battle between light and darkness. A must-read for fans of adventure and magical worlds.",
-        bgColor: "#020201",
+        bgColor: [
+            {
+                lg: "#020201",
+                sm: "#020201",
+            }
+        ],
         textColor: "#c97a32",
     },
 ]

@@ -20,3 +20,13 @@
         border-radius: 50px;
     }
 }
+
+.book-background {
+    background-color: var(--bg-color-mobile);
+}
+
+@media (min-width: 1024px) {
+	.book-background {
+		background-color: var(--bg-color-default);
+	}
+}
