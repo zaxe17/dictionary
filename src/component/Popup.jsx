@@ -2,36 +2,35 @@ import { FaCompressArrowsAlt } from "react-icons/fa";
 import { useEffect } from "react";
 
 const Popup = ({ open, onClose, children, page }) => {
-	useEffect(() => {
-		if (open) {
-			document.body.style.overflow = "hidden";
-		} else {
-			document.body.style.overflow = "auto";
-		}
+    useEffect(() => {
+        if (open) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
 
-		return () => {
-			document.body.style.overflow = "auto";
-		};
-	}, [open]);
+        return () => {
+            document.body.style.overflow = "auto";
+        };
+    }, [open]);
 
-	const sizePage = () => {
-		if (page === "dictionary") {
-			return "bg-teal-100 shadow p-10 transition-all max-w-[95%] lg:max-w-[40%] min-w-[90%] lg:min-w-[20%] h-3/4 lg:h-1/2";
-		} else if (page === "books") {
-			return "bg-teal-100 lg:w-1/2 h-5/6 lg:h-auto";
-		}
-		return "";
-	};
+    const bodyStyle = () => {
+        if (page === "dictionary" || page === "search") {
+            return "bg-teal-200 p-10 max-w-[95%] lg:max-w-[40%] min-w-[90%] lg:min-w-[20%] h-3/4 lg:h-1/2";
+        } else if (page === "books" || page === "search") {
+            return "m-2 lg:w-1/2 h-5/6 lg:h-auto overflow-hidden";
+        }
+    };
 
-	return (
+    return (
 		<div
 			className={`fixed inset-0 flex justify-center items-center transition-colors z-50 ${
-				open ? "visible bg-black/30" : "invisible"
+				open ? "visible bg-black/50" : "invisible"
 			}`}
 			onClick={onClose}>
 			<div
 				onClick={(e) => e.stopPropagation()}
-				className={`rounded-xl ${sizePage()} ${
+				className={`rounded-xl transition-all ${bodyStyle()} ${
 					open ? "scale-100 opacity-100" : "scale-125 opacity-0"
 				}`}>
 				<button

@@ -34,7 +34,7 @@ const Books = () => {
 				<Search setQuery={setQuery} />
 			</div>
 
-			<div className="grid grid-cols-2 lg:grid-cols-5 gap-2 lg:gap-4 pt-10 select-none">
+			<div className="grid grid-cols-2 lg:grid-cols-6 gap-2 lg:gap-4 pt-10 select-none">
 				{filteredItems.length > 0 ? (
 					filteredItems.map((book, index) => (
 						<motion.div
@@ -51,10 +51,12 @@ const Books = () => {
 								<img
 									src={book.cover}
 									alt={book.title}
-									className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+									className="h-full w-auto object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
 								/>
 							</div>
+
 							<div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+
 							<div className="absolute inset-0 flex translate-y-[100%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
 								<h1 className="font-dmserif text-xl lg:text-3xl font-bold text-teal-100">
 									{book.title}
@@ -74,26 +76,44 @@ const Books = () => {
 
 			<Popup open={open} onClose={handleClosePopup} page="books">
 				{selectedBook && (
-					<div className="flex flex-wrap lg:items-center">
-						<div className="w-1/2">
+					<div
+						className="flex flex-wrap lg:items-center"
+						style={{
+							backgroundColor: selectedBook.bgColor,
+						}}>
+						<div className="lg:w-1/2">
 							<img src={selectedBook.cover} alt="" />
 						</div>
 						<div
-							className="lg:w-1/2 p-12 overflow-y-scroll"
+							className="lg:w-1/2 p-12 overflow-y-scroll scroll-hidden"
 							style={{ maxHeight: "calc(80vh - 3rem)" }}>
-							<h2 className="capitalize lg:text-3xl text-teal-800 font-bold mt-5">
+							<h2
+								className="capitalize lg:text-3xl font-bold mt-5"
+								style={{ color: selectedBook.textColor }}>
 								{selectedBook.title}
 							</h2>
-							<p className="font-thin italic capitalize">
-								{selectedBook.author}
+							<p
+								className="font-semibold italic capitalize lg:text-xl"
+								style={{ color: selectedBook.textColor }}>
+								Author:{" "}
+								<span className="font-thin">
+									{selectedBook.author}
+								</span>
 							</p>
-							<p className="font-thin italic capitalize  mb-5">
-								{selectedBook.genre}
+							<p
+								className="font-semibold italic capitalize lg:text-xl mb-5"
+								style={{ color: selectedBook.textColor }}>
+								Genre:{" "}
+								<span className="font-thin">
+									{selectedBook.genre}
+								</span>
 							</p>
-							<p className="mb-5 lg:text-md">
+							<p
+								className="mb-5 text-sm lg:text-md"
+								style={{ color: selectedBook.textColor }}>
 								{selectedBook.description}
 							</p>
-							<button className="mb-5 py-1 bg-red-500 text-sm lg:px-4 lg:py-2 lg:text-xl text-white">
+							<button className="py-2 px-6 bg-teal-500 text-white rounded-lg text-md lg:text-lg shadow hover:bg-teal-600">
 								Read
 							</button>
 						</div>

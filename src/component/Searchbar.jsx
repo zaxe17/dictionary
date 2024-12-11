@@ -37,7 +37,7 @@ const Searchbar = () => {
 			title: book.title,
 			author: book.author,
 			genre: book.genre,
-			descriptoin: book.description
+			desc: book.description,
 		}));
 
 		const combinedResults = [...filteredWords, ...filteredBooks].slice(
@@ -104,25 +104,25 @@ const Searchbar = () => {
 									onClick={() =>
 										openPopup(
 											<div className="w-fit mx-auto my-4 max-w-full">
-												<div className="sticky top-0 bg-teal-100 z-10">
-													<h1 className="text-center capitalize text-5xl font-bold mb-2">
+												<div className="sticky top-0 z-10">
+													<h1 className="text-teal-600 text-center capitalize text-5xl font-bold mb-2">
 														{result.word}
 													</h1>
-													<p className="text-center text-md italic mb-4 border-b border-teal-600 pb-2">
+													<p className="text-teal-700 text-center text-md italic mb-4 border-b border-teal-600 pb-2">
 														[ {result.pronounce} ]
 													</p>
 												</div>
-												<ol className="list-decimal list-inside">
+												<ul className="list-disc list-inside">
 													{result.desc.map(
-														(desc, descIndex) => (
+														(desc, index) => (
 															<li
-																key={descIndex}
-																className="lg:text-xl break-words overflow-y-scroll pb-5 scroll-hidden">
+																key={index}
+																className="text-teal-900 lg:text-xl break-words overflow-y-scroll pb-5 scroll-hidden">
 																{desc}
 															</li>
 														)
 													)}
-												</ol>
+												</ul>
 											</div>
 										)
 									}>
@@ -133,7 +133,7 @@ const Searchbar = () => {
 									className="font-bold cursor-pointer"
 									onClick={() =>
 										openPopup(
-											<div className="lg:w-1/2 h-5/6 lg:h-auto">
+											<div className="scroll-hidden">
 												<div className="flex flex-wrap lg:items-center">
 													<div className="w-1/2">
 														<img
@@ -157,7 +157,7 @@ const Searchbar = () => {
 															{result.genre}
 														</p>
 														<p className="mb-5 lg:text-md">
-															{result.description}
+															{result.desc}
 														</p>
 														<button className="mb-5 py-1 bg-red-500 text-sm lg:px-4 lg:py-2 lg:text-xl text-white">
 															Read
@@ -175,7 +175,7 @@ const Searchbar = () => {
 				</div>
 			)}
 
-			<Popup open={isPopupOpen} onClose={closePopup}>
+			<Popup open={isPopupOpen} onClose={closePopup} page="search">
 				{popupContent}
 			</Popup>
 		</form>
