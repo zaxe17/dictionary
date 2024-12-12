@@ -57,11 +57,11 @@ const Books = () => {
 
 							<div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
 
-							<div className="absolute inset-0 flex translate-y-[100%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-								<h1 className="font-dmserif text-xl lg:text-3xl font-bold text-teal-100">
+							<div className="absolute inset-0 flex translate-y-[100%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0" style={{ color: book.textColor, textShadow: `0 0 4px ${book.textColor}` }}>
+								<h1 className="font-dmserif text-xl lg:text-3xl font-bold">
 									{book.title}
 								</h1>
-								<p className="mb-3 text-sm lg:text-lg italic text-teal-100 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+								<p className="mb-3 text-sm lg:text-lg italic opacity-0 transition-opacity duration-300 group-hover:opacity-100">
 									{book.genre}
 								</p>
 							</div>
@@ -92,10 +92,7 @@ const Books = () => {
 									className="lg:w-1/2 p-12 overflow-y-scroll scroll-hidden"
 									style={{ maxHeight: "calc(80vh - 3rem)" }}>
 									<h2
-										className="capitalize lg:text-3xl font-bold mt-5"
-										style={{
-											color: selectedBook.textColor,
-										}}>
+										className={`text-[${selectedBook.textColor}] capitalize lg:text-3xl font-bold mt-5`}>
 										{selectedBook.title}
 									</h2>
 									<p
