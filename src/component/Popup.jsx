@@ -1,4 +1,3 @@
-import { FaCompressArrowsAlt } from "react-icons/fa";
 import { useEffect } from "react";
 
 const Popup = ({ open, onClose, children, page }) => {
@@ -34,9 +33,9 @@ const Popup = ({ open, onClose, children, page }) => {
 					open ? "scale-100 opacity-100" : "scale-125 opacity-0"
 				}`}>
 				<button
-					className="absolute top-2 right-2 p-1 rounded-lg text-gray-400 hover:text-gray-600 text-2xl"
+					className="absolute top-0 right-2 p-1 rounded-lg text-gray-400 hover:text-gray-600 text-2xl"
 					onClick={onClose}>
-					<FaCompressArrowsAlt />
+					<span className="font-bold">X</span>
 				</button>
 				<div className="overflow-y-scroll h-full scroll-hidden">
 					{children}
