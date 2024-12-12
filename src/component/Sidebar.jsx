@@ -21,9 +21,7 @@ const Sidebar = ({ sidebarToggle, setSidebarToggle  }) => {
 					Dictionary
 				</h1>
 			</div>
-
 			<hr />
-
 			<ul className="mt-3 text-teal-50 font-bold">
 				<li className="mb-2 rounded hover:shadow hover:bg-teal-500">
 					<Link

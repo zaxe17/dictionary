@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 import Search from "../component/Search";
 
 const getFilteredItems = (query, items) => {
-    if (!query) {
-        return items;
-    }
+	if (!query) {
+		return items;
+	}
 
-    return items.filter((item) =>
+	return items.filter((item) =>
 		item.description.some((desc) =>
 			desc.word.toLowerCase().startsWith(query.toLowerCase())
 		)
@@ -17,17 +17,17 @@ const getFilteredItems = (query, items) => {
 };
 
 const Dictionary = () => {
-    const [query, setQuery] = useState("");
-    const filteredItems = getFilteredItems(query, WORDS);
-    const [open, setOpen] = useState(false);
-    const [selectedWord, setSelectedWord] = useState(null);
+	const [query, setQuery] = useState("");
+	const filteredItems = getFilteredItems(query, WORDS);
+	const [open, setOpen] = useState(false);
+	const [selectedWord, setSelectedWord] = useState(null);
 
-    const handleClosePopup = () => {
-        setOpen(false);
-        setSelectedWord(null);
-    };
+	const handleClosePopup = () => {
+		setOpen(false);
+		setSelectedWord(null);
+	};
 
-    return (
+	return (
 		<div className="pt-10">
 			<div className="flex justify-center items-center mx-auto lg:my-6 flex-col w-full h-full">
 				<Search setQuery={setQuery} />
@@ -41,9 +41,12 @@ const Dictionary = () => {
 							initial={{ opacity: 0 }}
 							transition={{ duration: 1 }}
 							className="capitalize font-bold text-5xl pl-4 pb-3 text-teal-100"
-							style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}>
+							style={{
+								textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+							}}>
 							{words.letter}
 						</motion.h1>
+
 						<div className="border-b border-teal-600 pb-4 break-words">
 							<div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
 								{words.description

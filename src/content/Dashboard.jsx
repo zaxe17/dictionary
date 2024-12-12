@@ -19,7 +19,6 @@ const Dashboard = ({ sidebarToggle, setSidebarToggle }) => {
 				setSidebarToggle={setSidebarToggle}
 				setQuery={setQuery}
 			/>
-
 			<div className="px-10">
 				<Routes location={location} key={location.pathname}>
 					<Route path="/" element={<Home />} />

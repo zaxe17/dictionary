@@ -91,7 +91,6 @@ const Searchbar = () => {
 					<FaSearch />
 				</button>
 			</motion.div>
-
 			{activeSearch.length > 0 && (
 				<div className="absolute top-20 p-2 bg-teal-400 text-white w-full rounded-xl left-1/2 -translate-x-1/2 flex flex-col gap-2">
 					{activeSearch.map((result, index) => (

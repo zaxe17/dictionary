@@ -20,7 +20,6 @@ const Search = ({ setQuery }) => {
 					placeholder="Search..."
 					onChange={handleSearchChange}
 				/>
-
 				<button
 					type="button"
 					className="absolute h-auto w-auto right-[0.15rem] lg:right-1 top-1/2 -translate-y-1/2 p-2 lg:p-4 text-teal-900 bg-teal-500 rounded-full flex justify-center items-center">
