@@ -3164,7 +3164,7 @@ export const BOOKS = [
         cover: GRAY_WHITE_MINIMALIS,
         title: "The Sound of Silence",
         author: "jacolbia",
-        genre: "Fiction",
+        genre: ["Fiction"],
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..",
         bgColor: [
             {
@@ -3177,9 +3177,9 @@ export const BOOKS = [
     {   
         cover: BLACK_AND_WHITE_MODERN,
         title: "Alone | A True Story",
-        author: "jacolbia",
-        genre: "Fiction",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..",
+        author: "Gérard d'Aboville",
+        genre: ["Biography", "Travel literature"],
+        description: "This is the incredible true story of one man's heroic battle against impossible odds, a tale of pain and anguish, bravery and utter solitude, a tale that ends in a victory not only over the implacable ocean but over himself as well. At the age of forty-five, Gerard d'Aboville set out to row across the Pacific Ocean from Japan to the United States. Taking his rowboat the Sector, which had a living compartment thirty-one inches high, containing a bunk, one-burner stove, and a ham radio, d'Aboville made his way across an ocean 6,200 miles wide. Though he rowed twelve hours a day, battled cyclones and headwinds that kept him in one place for days at a time, was capsized dozens of times forty-foot waves that hit him like cannonballs, he never quit; even when he was trapped upside down inside his cabin for almost two hours while nearly depleting his oxygen trying to right the boat.",
         bgColor: [
             {
                 lg: "#232323",
@@ -3192,7 +3192,7 @@ export const BOOKS = [
         cover: BROWN_AND_BLUE_WIZARD,
         title: "The Young Wizard",
         author: "jacolbia",
-        genre: "Fiction",
+        genre: ["Fiction"],
         description: "Brown and Blue Wizard is a captivating fantasy novel set in a world of ancient magic and mystical creatures. The story follows a young, reluctant hero who must master both earthy brown and ethereal blue magic to protect their kingdom from an impending dark force. Along the way, they navigate treacherous alliances, uncover secrets, and face powerful adversaries. With rich world-building and deep character development, the novel explores themes of self-discovery, power, and the battle between light and darkness. A must-read for fans of adventure and magical worlds.",
         bgColor: [
             {

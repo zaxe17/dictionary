@@ -62,11 +62,15 @@ const Books = () => {
 									color: book.textColor,
 									textShadow: `0 0 4px ${book.textColor}`,
 								}}>
-								<h1 className="font-dmserif text-xl lg:text-3xl font-bold">
+								<h1 className="font-dmserif text-xl lg:text-3xl font-bold capitalize">
 									{book.title}
 								</h1>
-								<p className="mb-3 text-sm lg:text-lg italic opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-									{book.genre}
+								<p className="mb-3 text-sm lg:text-lg italic opacity-0 transition-opacity duration-300 group-hover:opacity-100 capitalize">
+									<span className="font-thin">
+										{book.genre.length > 1
+											? book.genre.join(", ")
+											: book.genre}
+									</span>
 								</p>
 							</div>
 						</motion.div>
@@ -98,7 +102,7 @@ const Books = () => {
 									<h2
 										className="capitalize lg:text-3xl font-bold mt-5"
 										style={{
-											color: selectedBook.textColor
+											color: selectedBook.textColor,
 										}}>
 										{selectedBook.title}
 									</h2>
@@ -119,7 +123,9 @@ const Books = () => {
 										}}>
 										Genre:{" "}
 										<span className="font-thin">
-											{selectedBook.genre}
+											{selectedBook.genre.length > 1
+												? selectedBook.genre.join(", ")
+												: selectedBook.genre}
 										</span>
 									</p>
 									<p
