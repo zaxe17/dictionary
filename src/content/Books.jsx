@@ -47,7 +47,7 @@ const Books = () => {
 								setSelectedBook(book);
 								setOpen(true);
 							}}>
-							<div className="w-full h-auto">
+							<div className="w-full h-full">
 								<img
 									src={book.cover}
 									alt={book.title}
@@ -55,21 +55,19 @@ const Books = () => {
 								/>
 							</div>
 							<div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
-
 							<div
-								className="absolute inset-0 flex translate-y-[100%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0"
+								className="absolute inset-0 flex translate-y-[100%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0 text-white"
 								style={{
-									color: book.textColor,
-									textShadow: `0 0 4px ${book.textColor}`,
+									/* color: book.textColor, */
+									textShadow:
+										"0 0 4px rgb(255, 255, 255)" /* `0 0 4px ${book.textColor}` */,
 								}}>
 								<h1 className="font-dmserif text-xl lg:text-3xl font-bold capitalize">
 									{book.title}
 								</h1>
 								<p className="mb-3 text-sm lg:text-lg italic opacity-0 transition-opacity duration-300 group-hover:opacity-100 capitalize">
 									<span className="font-thin">
-										{book.genre.length > 1
-											? book.genre.join(", ")
-											: book.genre}
+										{book.author}
 									</span>
 								</p>
 							</div>
@@ -93,14 +91,14 @@ const Books = () => {
 									"--bg-color-default": bgColor.lg,
 									"--bg-color-mobile": bgColor.sm,
 								}}>
-								<div className="lg:w-1/2">
+								<div className="lg:w-1/2 mx-auto">
 									<img src={selectedBook.cover} alt="" />
 								</div>
 								<div
-									className="lg:w-1/2 p-12 overflow-y-scroll scroll-hidden"
+									className="lg:w-1/2 my-5 p-12 overflow-y-hidden scroll-hidden"
 									style={{ maxHeight: "calc(80vh - 3rem)" }}>
 									<h2
-										className="capitalize lg:text-3xl font-bold mt-5"
+										className="capitalize lg:text-4xl font-bold"
 										style={{
 											color: selectedBook.textColor,
 										}}>
@@ -117,7 +115,7 @@ const Books = () => {
 										</span>
 									</p>
 									<p
-										className="font-semibold italic capitalize lg:text-xl mb-5"
+										className="font-semibold italic capitalize lg:text-sm mb-5"
 										style={{
 											color: selectedBook.textColor,
 										}}>
@@ -128,14 +126,20 @@ const Books = () => {
 												: selectedBook.genre}
 										</span>
 									</p>
-									<p
-										className="mb-5 text-sm lg:text-md"
+									<div
+										className="overflow-y-scroll scroll-hidden my-2"
 										style={{
-											color: selectedBook.textColor,
+											maxHeight: "calc(65vh - 12rem)",
 										}}>
-										{selectedBook.description}
-									</p>
-									<button className="py-2 px-6 bg-teal-500 text-white rounded-lg text-md lg:text-lg shadow hover:bg-teal-600">
+										<p
+											className="mb-5 text-sm lg:text-base break-words"
+											style={{
+												color: selectedBook.textColor,
+											}}>
+											{selectedBook.description}
+										</p>
+									</div>
+									<button className="py-2 px-6 bg-teal-500 text-white rounded-lg text-base lg:text-lg shadow hover:bg-teal-600">
 										Read
 									</button>
 								</div>

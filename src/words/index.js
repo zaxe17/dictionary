@@ -1,6 +1,27 @@
-import GRAY_WHITE_MINIMALIS from "../assets/Gray White Minimalist Thriller Book Cover.png"
-import BLACK_AND_WHITE_MODERN from "../assets/Black And White  Modern Alone Story Book Cover.png"
-import BROWN_AND_BLUE_WIZARD from "../assets/Brown and Blue Wizard Fantasy Novel Book Cover.png"
+import {
+    GRAY_WHITE_MINIMALIS,
+    BLACK_AND_WHITE_MODERN,
+    BROWN_AND_BLUE_WIZARD,
+    ALL_THE_LIGHT_WE_CANNOT_SEE,
+    BEACH_READ,
+    BECOMING,
+    BRAIDING_SWEETGRASS,
+    CIRCE,
+    CRYING_IN_HMART,
+    DUNE,
+    GILLIAN_FLYNN_GONE_GIRL,
+    GONE_WITH_THE_WIND,
+    HAMNET,
+    MEXICAN_GOTHIC,
+    FAULT_IN_OUR_STARS,
+    THE_NICKEL_BOYS,
+    THE_OVERSTORY,
+    THE_POPPY_WAR,
+    THE_SILENT_PATIENT,
+    THE_WOMAN_IN_THE_WINDOW,
+    WHERE_THE_CRAWDADS_SING
+} from "./BookCover";
+
 
 export const WORDS = [
     {
@@ -3201,5 +3222,257 @@ export const BOOKS = [
             }
         ],
         textColor: "#c97a32",
+    },
+    {   
+        cover: ALL_THE_LIGHT_WE_CANNOT_SEE,
+        title: "all the light we cannot see",
+        author: "anthony doerr",
+        genre: ["Novel", "Historical Fiction", "War story"],
+        description: "All the Light We Cannot See is structured nonlinearly; sections taking place during the Battle of Saint-Malo in August 1944 are interspersed with sections about earlier times starting in 1934 and going in chronological order. Additionally, the point of view alternates between Marie-Laure LeBlanc and Werner Pfennig between chapters. For simplicity, their respective narratives preceding the Battle of Saint-Malo along with the events during and after the battle have dedicated sub-sections.",
+        bgColor: [
+            {
+                lg: "#0f355c",
+                sm: "#04203e",
+            }
+        ],
+        textColor: "#fffbf7",
+    },
+    {   
+        cover: BEACH_READ,
+        title: "beach read",
+        author: "emily henry",
+        genre: ["Romance novel", "Contemporary romance", "Humorous Fiction"],
+        description: "January Andrews is a successful romance novel writer who is struggling after the death of her father and the discovery that he was having an affair. While living in his old beach house to prepare to sell it, she runs into Augustus Everett, her former rival in college and now an acclaimed literary fiction author. They reconnect and bond over struggling with writer's block; they challenge each other to spend the summer writing a novel in each other's genres.",
+        bgColor: [
+            {
+                lg: "#ffc001",
+                sm: "#ffc001",
+            }
+        ],
+        textColor: "#fcfdfb",
+    },
+    {   
+        cover: BECOMING,
+        title: "becoming",
+        author: "michelle obama",
+        genre: ["Memoir", "Biography", "Autobiography"],
+        description: "Becoming is the memoir by former First Lady of the United States Michelle Obama, published on November 13, 2018. Described by the author as a deeply personal experience, the book talks about her roots and how she found her voice, as well as her time in the White House, her public health campaign, and her role as a mother. The book is published by Crown and was released in 24 languages. One million copies were donated to First Book, an American nonprofit organization which provides books to children. It was the highest-selling book published in the United States in 2018, setting the record 15 days after its publication, with over two million copies sold.",
+        bgColor: [
+            {
+                lg: "#b0c8ca",
+                sm: "#86a7ae",
+            }
+        ],
+        textColor: "#fefffd",
+    },
+    {   
+        cover: BRAIDING_SWEETGRASS,
+        title: "braiding sweetgrass",
+        author: "robin wall kimmerer",
+        genre: ["Biography", "Nature writing", "Autobiography"],
+        description: "Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants is a 2013 nonfiction book by Potawatomi professor Robin Wall Kimmerer, about the role of Indigenous knowledge as an alternative or complementary approach to Western mainstream scientific methodologies. Braiding Sweetgrass explores reciprocal relationships between humans and the land, with a focus on the role of plants and botany in both Native American and Western European traditions. The book received largely positive reviews, and has appeared on several bestseller lists. Kimmerer is known for her scholarship on traditional ecological knowledge, ethnobotany, and moss ecology.",
+        bgColor: [
+            {
+                lg: "#ffffff",
+                sm: "#ffffff",
+            }
+        ],
+        textColor: "#098f53",
+    },
+    {   
+        cover: CIRCE,
+        title: "circe",
+        author: "madeline miller",
+        genre: ["Novel", "Fantasy", "Historical Fiction", "Fantasy Fiction", "Fairy tale"],
+        description: "Circe is a 2018 mythic fantasy novel by American writer Madeline Miller. Set during the Greek Heroic Age, it is an adaptation of various Greek myths, most notably the Odyssey, as told from the perspective of the witch Circe. The novel explores Circe's origin story and narrates Circe's encounters with mythological figures such as Hermes, the Minotaur, Jason, and Medea and ultimately, her romance with Odysseus and his son Telemachus.",
+        bgColor: [
+            {
+                lg: "#0a0a0a",
+                sm: "#0a0a0a",
+            }
+        ],
+        textColor: "#fefefe",
+    },
+    {   
+        cover: CRYING_IN_HMART,
+        title: "crying in h mart",
+        author: "michelle zauner",
+        genre: ["Biography", "Autobiography", "Cookbook"],
+        description: "Crying in H Mart: A Memoir is a 2021 memoir by Michelle Zauner, singer and guitarist of the musical project Japanese Breakfast. It is her debut book, published on April 20, 2021, by Alfred A. Knopf. It is an expansion of Zauner's essay of the same name which was published in The New Yorker on August 20, 2018. The title mentions H Mart, a North American supermarket chain that specializes in Korean and other Asian products.",
+        bgColor: [
+            {
+                lg: "#000000",
+                sm: "#e02e22",
+            }
+        ],
+        textColor: "#ffffff",
+    },
+    {   
+        cover: DUNE,
+        title: "dune",
+        author: "frank herber",
+        genre: ["Novel", "Science fiction", "Fantasy Fiction", "Adventure fiction", "Conspiracy Fiction", "Philosophical Fiction", "Military Science Fiction", "Planetary Romance"],
+        description: "Dune by Frank Herbert is a classic science fiction novel about Paul Atreides, heir to a noble house, who rises to power on the desert planet Arrakis, the universe's only source of the valuable spice melange. Amid betrayal and political intrigue, Paul allies with the native Fremen, fulfilling a prophecy as their messianic leader. The novel explores themes of power, ecology, and destiny, set in a richly detailed interstellar world.",
+        bgColor: [
+            {
+                lg: "#e09d44",
+                sm: "#c6362d",
+            }
+        ],
+        textColor: "#90d5f8",
+    },
+    {   
+        cover: GILLIAN_FLYNN_GONE_GIRL,
+        title: "gone girl",
+        author: "gillian flynn",
+        genre: ["Novel", "Thriller", "Fiction", "Mystery", "Suspense"],
+        description: "Gone Girl is a crime thriller novel by American writer Gillian Flynn, published by Crown Publishing Group in June 5, 2012. The book became popular, making the New York Times Best Seller list. The sense of suspense in the novel comes from whether Nick Dunne is responsible for the disappearance of his wife Amy. Critics acclaimed the book for its use of unreliable narration, plot twists, and suspense. A film adaptation, with a screenplay by Flynn herself, was released on October 3, 2014. Directed by David Fincher, with Ben Affleck and Rosamund Pike in lead roles, the film achieved both commercial success and critical acclaim.",
+        bgColor: [
+            {
+                lg: "#050505",
+                sm: "#050505",
+            }
+        ],
+        textColor: "#f35762",
+    },
+    {   
+        cover: GONE_WITH_THE_WIND,
+        title: "gone with the wind",
+        author: "margaret mitchell",
+        genre: ["Novel", "Historical Fiction"],
+        description: "Gone with the Wind is a novel by American writer Margaret Mitchell, first published in 1936. The story is set in Clayton County and Atlanta, both in Georgia, during the American Civil War and Reconstruction Era. It depicts the struggles of young Scarlett O'Hara, the spoiled daughter of a well-to-do plantation owner, who must use every means at her disposal to claw her way out of poverty following Sherman's destructive \"March to the Sea.\" This historical novel features a coming-of-age story, with the title taken from the poem \"Non Sum Qualis eram Bonae Sub Regno Cynarae\", written by Ernest Dowson. Gone with the Wind was popular with American readers from the outset and was the top American fiction bestseller in 1936 and 1937. As of 2014, a Harris poll found it to be the second favorite book of American readers, just behind the Bible. More than 30 million copies have been printed worldwide.[citation needed] Gone with the Wind is a controversial reference point for subsequent writers of the South, both black and white. Scholars at American universities refer to, interpret, and study it in their writings. The novel has been absorbed into American popular culture. Mitchell received the Pulitzer Prize for Fiction for the book in 1937. It was adapted into the 1939 film of the same name, which is considered to be one of the greatest movies ever made and also received the Academy Award for Best Picture during the 12th annual Academy Awards ceremony. Gone with the Wind is the only novel by Mitchell published during her lifetime.",
+        bgColor: [
+            {
+                lg: "#ffcca5",
+                sm: "#ffcca5",
+            }
+        ],
+        textColor: "#7b3801",
+    },
+    {   
+        cover: HAMNET,
+        title: "hamnet",
+        author: "maggie o'Farrel",
+        genre: ["Historical Fiction", "Biographical Fiction"],
+        description: "Hamnet is a 2020 novel by Maggie O'Farrell. It is a fictional account of William Shakespeare's son, Hamnet, who died at age eleven in 1596, focusing on his parents' grief. In Canada, the novel was published under the title Hamnet & Judith.In 2020, the book won the Women's Prize for Fiction and National Book Critics Circle Award for Fiction; that December, it was also chosen as Waterstones' Book Of The Year. The following year, it was named \"Novel of the Year\" at the Dalkey Literary Awards, was shortlisted for the Walter Scott Prize, and longlisted for the Andrew Carnegie Medal for Excellence in Fiction. It was described in Literary Review as \"a rich story by any stretch of the imagination, and O'Farrell's stretches much, much further than most of ours.\"",
+        bgColor: [
+            {
+                lg: "#0d447d",
+                sm: "#0d447d",
+            }
+        ],
+        textColor: "#e4bf3c",
+    },
+    {   
+        cover: MEXICAN_GOTHIC,
+        title: "mexican gothic",
+        author: "silvia moreno-garcia",
+        genre: ["Gothic fiction", "Horror fiction", "Historical Fiction", "Fantasy Fiction", "Historical fantasy"],
+        description: "Mexican Gothic is a 2020 gothic horror novel by Mexican Canadian author Silvia Moreno-Garcia. It centers on a young woman investigating her cousin's claims that her husband is trying to murder her. The novel landed on bestseller lists and Moreno-Garcia's writing has received comparisons to Daphne du Maurier and Guillermo del Toro. It also received multiple literary awards, including the Aurora Award for Best Novel, Locus Award for Best Horror Novel, and British Fantasy's August Derleth Award; and a slew of other nominations.",
+        bgColor: [
+            {
+                lg: "#405421",
+                sm: "#0e030a",
+            }
+        ],
+        textColor: "#ffffff",
+    },
+    {   
+        cover: FAULT_IN_OUR_STARS,
+        title: "fault in our stars",
+        author: "john green",
+        genre: ["Novel", "Young adult literature", "Romance novel"],
+        description: "The Fault in Our Stars is a novel by John Green. It is his fourth solo novel, and sixth novel overall. It was published on January 10, 2012. The title is inspired by Act 1, Scene 2 of Shakespeare's play Julius Caesar, in which the nobleman Cassius says to Brutus: \"Men at some time were masters of their fates, / The fault, dear Brutus, is not in our stars, / But in ourselves, that we are underlings.\" Author John Green was inspired to write the book after working as a student chaplain in a children's hospital, and it is dedicated to his friend Esther Earl, who died of Thyroid cancer in 2010, age 16. The story is narrated by Hazel Grace Lancaster, a 16-year-old girl with thyroid cancer that has affected her lungs. Hazel is forced by her parents to attend a support group where she subsequently meets and falls in love with 17-year-old Augustus Waters, an ex-basketball player, amputee, and survivor of osteosarcoma.An American feature film adaptation of the same name as the novel directed by Josh Boone and starring Shailene Woodley, Ansel Elgort, and Nat Wolff was released on June 6, 2014. A Hindi feature film adaptation of the novel, titled Dil Bechara, which was directed by Mukesh Chhabra and starring Sushant Singh Rajput, Sanjana Sanghi, Saswata Chatterjee, Swastika Mukherjee and Saif Ali Khan, was released on July 24, 2020, on Disney+ Hotstar. The American film adaptation and the book enjoyed strong critical and commercial success, with the latter becoming one of the best-selling books of all time.",
+        bgColor: [
+            {
+                lg: "#01ace2",
+                sm: "#01ace2",
+            }
+        ],
+        textColor: "#ffffff",
+    },
+    {   
+        cover: THE_NICKEL_BOYS,
+        title: "the nickle boys",
+        author: "colson whitehead",
+        genre: ["Novel", "Historical Fiction", "Bildungsroman"],
+        description: "The Nickel Boys is a 2019 novel by American novelist Colson Whitehead. It is based on the historic Dozier School, a reform school in Florida that operated for 111 years and was revealed as highly abusive. A university investigation found numerous unmarked graves for unrecorded deaths and a history into the late 20th century of emotional and physical abuse of students. TIME named it one of best books of the decade. The Nickel Boys won the 2020 Pulitzer Prize for Fiction. Judges of the prize called the novel \"a spare and devastating exploration of abuse at a reform school in Jim Crow-era Florida that is ultimately a powerful tale of human perseverance, dignity and redemption.\" It is Whitehead's second win, making him the fourth writer in history to have won the prize for fiction twice.",
+        bgColor: [
+            {
+                lg: "#f9f4ee",
+                sm: "#f9f4ee",
+            }
+        ],
+        textColor: "#1d1c1a",
+    },
+    {   
+        cover: THE_OVERSTORY,
+        title: "the overstory",
+        author: "richard powers",
+        genre: ["Novel", "Ecofiction", "Literary fiction", "Nature writing"],
+        description: "The Overstory by Richard Powers is a 2018 novel that interweaves the lives of nine Americans whose profound experiences with trees inspire them to combat deforestation and environmental destruction. Inspired by Powers' encounter with giant redwoods, the novel explores the interconnectedness of human and natural worlds through a structure that mirrors the growth and complexity of a forest. The story draws from real-world ecological science, with characters like Patricia Westerford, based on forest ecologist Suzanne Simard, who popularizes groundbreaking ideas about tree communication. The novel pays homage to works such as The Hidden Life of Trees by Peter Wohlleben and Finding the Mother Tree by Simard. Acclaimed for its lyrical prose, intricate structure, and environmental message, The Overstory was shortlisted for the 2018 Man Booker Prize and won the 2019 Pulitzer Prize for Fiction. It is a powerful meditation on humanity's relationship with nature and a call to action for the preservation of forests.",
+        bgColor: [
+            {
+                lg: "#755427",
+                sm: "#915827",
+            }
+        ],
+        textColor: "#fbfffe",
+    },
+    {   
+        cover: THE_POPPY_WAR,
+        title: "the poppy war",
+        author: "r.f. kuang",
+        genre: ["Novel", "Fantasy Fiction", "Grimdark", "High fantasy", "Historical fantasy"],
+        description: "The Poppy War is a 2018 novel by R. F. Kuang, published by Harper Voyager. The Poppy War, a grimdark fantasy, draws its plot and politics from mid-20th-century China, with the conflict in the novel based on the Second Sino-Japanese War, and an atmosphere inspired by the Song dynasty. A sequel, The Dragon Republic, was released in August 2019, and a third book, The Burning God was released November 2020.",
+        bgColor: [
+            {
+                lg: "#ffffff",
+                sm: "#272827",
+            }
+        ],
+        textColor: "#e66641",
+    },
+    {   
+        cover: THE_SILENT_PATIENT,
+        title: "the silent patient",
+        author: "alex michaelides",
+        genre: ["Thriller, Novel", "Psychological thriller", "Suspense", "crime fiction", "Psychological Fiction"],
+        description: "The Silent Patient is a 2019 psychological thriller novel written by British-Cypriot author Alex Michaelides. The successful debut novel was published by Celadon Books, a division of Macmillan Publishers, on 5 February 2019. The audiobook version, released on the same date, is read by Louise Brealey and Jack Hawkins. The story is narrated by an English psychotherapist, Theo Faber, dealing with a patient who turns mute after murdering her husband. Upon its release, the book debuted on The New York Times Best Seller list at No.1. It later won the Goodreads Choice Award 2019 in the Mystery and Thriller category.",
+        bgColor: [
+            {
+                lg: "#d9cec8",
+                sm: "#8c876b",
+            }
+        ],
+        textColor: "#9c1512",
+    },
+    {   
+        cover: THE_WOMAN_IN_THE_WINDOW,
+        title: "the woman in the window",
+        author: "a.j. finn",
+        genre: ["Novel", "Thriller", "Fiction", "Mystery", "Suspense"],
+        description: "The Woman in the Window is a thriller novel by American author A.J. Finn, published by William Morrow on January 2, 2018. It hit #1 on the New York Times bestseller list. The book follows the life of Dr. Anna Fox who suffers from agoraphobia and lives a reclusive life at her large home in New York City, where she one day witnesses a murder across the street. A film adaptation directed by Joe Wright and starring Amy Adams in the title role was released by Netflix in 2021.",
+        bgColor: [
+            {
+                lg: "#264f80",
+                sm: "#1c1d22",
+            }
+        ],
+        textColor: "#e13131",
+    },
+    {   
+        cover: WHERE_THE_CRAWDADS_SING,
+        title: "where the crawdads sing",
+        author: "delia owens",
+        genre: ["novel", "Mystery", "Historical Fiction", "Bildungsroman"],
+        description: "Where the Crawdads Sing is a 2018 coming-of-age murder mystery novel by American zoologist Delia Owens. The story follows two timelines that slowly intertwine. The first timeline describes the life and adventures of a young girl named Kya as she grows up isolated in the marshes of North Carolina. The second timeline follows an investigation into the apparent murder of Chase Andrews, a local celebrity of Barkley Cove, a fictional coastal town of North Carolina.",
+        bgColor: [
+            {
+                lg: "#f7b28b",
+                sm: "#4e5b63",
+            }
+        ],
+        textColor: "#fdfcf7",
     },
 ]
