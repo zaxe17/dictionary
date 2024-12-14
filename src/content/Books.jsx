@@ -13,7 +13,7 @@ const getFilteredItems = (query, items) => {
 		(item) =>
 			item.title.toLowerCase().includes(query.toLowerCase()) ||
 			item.author.toLowerCase().includes(query.toLowerCase()) ||
-			item.genre.toLowerCase().includes(query.toLowerCase())
+			item.genre.some(genre => genre.toLowerCase().includes(query.toLowerCase()))
 	);
 };
 
