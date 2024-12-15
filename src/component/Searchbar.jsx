@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { FaSearch } from "react-icons/fa";
-import { WORDS, BOOKS } from "../words";
+import { WORDS, BOOKS } from "../const";
 import Popup from "./Popup";
 import { motion } from "framer-motion";
 

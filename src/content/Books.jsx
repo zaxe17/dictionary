@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BOOKS } from "../words";
+import { BOOKS } from "../const";
 import Search from "../component/Search";
 import Popup from "../component/Popup";
 import { motion } from "framer-motion";

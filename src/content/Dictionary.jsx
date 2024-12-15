@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { WORDS } from "../words";
+import { WORDS } from "../const";
 import Popup from "../component/Popup";
 import { motion } from "framer-motion";
 import Search from "../component/Search";
