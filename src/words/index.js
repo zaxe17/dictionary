@@ -1,26 +1,5 @@
-import {
-    GRAY_WHITE_MINIMALIS,
-    BLACK_AND_WHITE_MODERN,
-    BROWN_AND_BLUE_WIZARD,
-    ALL_THE_LIGHT_WE_CANNOT_SEE,
-    BEACH_READ,
-    BECOMING,
-    BRAIDING_SWEETGRASS,
-    CIRCE,
-    CRYING_IN_HMART,
-    DUNE,
-    GILLIAN_FLYNN_GONE_GIRL,
-    GONE_WITH_THE_WIND,
-    HAMNET,
-    MEXICAN_GOTHIC,
-    FAULT_IN_OUR_STARS,
-    THE_NICKEL_BOYS,
-    THE_OVERSTORY,
-    THE_POPPY_WAR,
-    THE_SILENT_PATIENT,
-    THE_WOMAN_IN_THE_WINDOW,
-    WHERE_THE_CRAWDADS_SING
-} from "./BookCover";
+import * as BookCovers from "./BookCover";
+
 
 
 export const WORDS = [
@@ -3182,7 +3161,7 @@ export const WORDS = [
 
 export const BOOKS = [
     {   
-        cover: GRAY_WHITE_MINIMALIS,
+        cover: BookCovers.GRAY_WHITE_MINIMALIS,
         title: "The Sound of Silence",
         author: "jacolbia",
         genre: ["Fiction"],
@@ -3196,7 +3175,7 @@ export const BOOKS = [
         textColor: "#ffffff",
     },
     {   
-        cover: BLACK_AND_WHITE_MODERN,
+        cover: BookCovers.BLACK_AND_WHITE_MODERN,
         title: "Alone | A True Story",
         author: "Gérard d'Aboville",
         genre: ["Biography", "Travel literature"],
@@ -3210,7 +3189,7 @@ export const BOOKS = [
         textColor: "#ffffff",
     },
     {   
-        cover: BROWN_AND_BLUE_WIZARD,
+        cover: BookCovers.BROWN_AND_BLUE_WIZARD,
         title: "The Young Wizard",
         author: "jacolbia",
         genre: ["Fiction"],
@@ -3224,7 +3203,7 @@ export const BOOKS = [
         textColor: "#c97a32",
     },
     {   
-        cover: ALL_THE_LIGHT_WE_CANNOT_SEE,
+        cover: BookCovers.ALL_THE_LIGHT_WE_CANNOT_SEE,
         title: "all the light we cannot see",
         author: "anthony doerr",
         genre: ["Novel", "Historical Fiction", "War story"],
@@ -3238,7 +3217,7 @@ export const BOOKS = [
         textColor: "#fffbf7",
     },
     {   
-        cover: BEACH_READ,
+        cover: BookCovers.BEACH_READ,
         title: "beach read",
         author: "emily henry",
         genre: ["Romance novel", "Contemporary romance", "Humorous Fiction"],
@@ -3252,7 +3231,7 @@ export const BOOKS = [
         textColor: "#fcfdfb",
     },
     {   
-        cover: BECOMING,
+        cover: BookCovers.BECOMING,
         title: "becoming",
         author: "michelle obama",
         genre: ["Memoir", "Biography", "Autobiography"],
@@ -3266,7 +3245,7 @@ export const BOOKS = [
         textColor: "#fefffd",
     },
     {   
-        cover: BRAIDING_SWEETGRASS,
+        cover: BookCovers.BRAIDING_SWEETGRASS,
         title: "braiding sweetgrass",
         author: "robin wall kimmerer",
         genre: ["Biography", "Nature writing", "Autobiography"],
@@ -3280,7 +3259,7 @@ export const BOOKS = [
         textColor: "#098f53",
     },
     {   
-        cover: CIRCE,
+        cover: BookCovers.CIRCE,
         title: "circe",
         author: "madeline miller",
         genre: ["Novel", "Fantasy", "Historical Fiction", "Fantasy Fiction", "Fairy tale"],
@@ -3294,7 +3273,7 @@ export const BOOKS = [
         textColor: "#fefefe",
     },
     {   
-        cover: CRYING_IN_HMART,
+        cover: BookCovers.CRYING_IN_HMART,
         title: "crying in h mart",
         author: "michelle zauner",
         genre: ["Biography", "Autobiography", "Cookbook"],
@@ -3308,7 +3287,7 @@ export const BOOKS = [
         textColor: "#ffffff",
     },
     {   
-        cover: DUNE,
+        cover: BookCovers.DUNE,
         title: "dune",
         author: "frank herber",
         genre: ["Novel", "Science fiction", "Fantasy Fiction", "Adventure fiction", "Conspiracy Fiction", "Philosophical Fiction", "Military Science Fiction", "Planetary Romance"],
@@ -3322,7 +3301,7 @@ export const BOOKS = [
         textColor: "#90d5f8",
     },
     {   
-        cover: GILLIAN_FLYNN_GONE_GIRL,
+        cover: BookCovers.GILLIAN_FLYNN_GONE_GIRL,
         title: "gone girl",
         author: "gillian flynn",
         genre: ["Novel", "Thriller", "Fiction", "Mystery", "Suspense"],
@@ -3336,7 +3315,7 @@ export const BOOKS = [
         textColor: "#f35762",
     },
     {   
-        cover: GONE_WITH_THE_WIND,
+        cover: BookCovers.GONE_WITH_THE_WIND,
         title: "gone with the wind",
         author: "margaret mitchell",
         genre: ["Novel", "Historical Fiction"],
@@ -3350,7 +3329,7 @@ export const BOOKS = [
         textColor: "#7b3801",
     },
     {   
-        cover: HAMNET,
+        cover: BookCovers.HAMNET,
         title: "hamnet",
         author: "maggie o'Farrel",
         genre: ["Historical Fiction", "Biographical Fiction"],
@@ -3364,7 +3343,7 @@ export const BOOKS = [
         textColor: "#e4bf3c",
     },
     {   
-        cover: MEXICAN_GOTHIC,
+        cover: BookCovers.MEXICAN_GOTHIC,
         title: "mexican gothic",
         author: "silvia moreno-garcia",
         genre: ["Gothic fiction", "Horror fiction", "Historical Fiction", "Fantasy Fiction", "Historical fantasy"],
@@ -3378,7 +3357,7 @@ export const BOOKS = [
         textColor: "#ffffff",
     },
     {   
-        cover: FAULT_IN_OUR_STARS,
+        cover: BookCovers.FAULT_IN_OUR_STARS,
         title: "fault in our stars",
         author: "john green",
         genre: ["Novel", "Young adult literature", "Romance novel"],
@@ -3392,7 +3371,7 @@ export const BOOKS = [
         textColor: "#ffffff",
     },
     {   
-        cover: THE_NICKEL_BOYS,
+        cover: BookCovers.THE_NICKEL_BOYS,
         title: "the nickle boys",
         author: "colson whitehead",
         genre: ["Novel", "Historical Fiction", "Bildungsroman"],
@@ -3406,7 +3385,7 @@ export const BOOKS = [
         textColor: "#1d1c1a",
     },
     {   
-        cover: THE_OVERSTORY,
+        cover: BookCovers.THE_OVERSTORY,
         title: "the overstory",
         author: "richard powers",
         genre: ["Novel", "Ecofiction", "Literary fiction", "Nature writing"],
@@ -3420,7 +3399,7 @@ export const BOOKS = [
         textColor: "#fbfffe",
     },
     {   
-        cover: THE_POPPY_WAR,
+        cover: BookCovers.THE_POPPY_WAR,
         title: "the poppy war",
         author: "r.f. kuang",
         genre: ["Novel", "Fantasy Fiction", "Grimdark", "High fantasy", "Historical fantasy"],
@@ -3434,7 +3413,7 @@ export const BOOKS = [
         textColor: "#e66641",
     },
     {   
-        cover: THE_SILENT_PATIENT,
+        cover: BookCovers.THE_SILENT_PATIENT,
         title: "the silent patient",
         author: "alex michaelides",
         genre: ["Thriller, Novel", "Psychological thriller", "Suspense", "crime fiction", "Psychological Fiction"],
@@ -3448,7 +3427,7 @@ export const BOOKS = [
         textColor: "#9c1512",
     },
     {   
-        cover: THE_WOMAN_IN_THE_WINDOW,
+        cover: BookCovers.THE_WOMAN_IN_THE_WINDOW,
         title: "the woman in the window",
         author: "a.j. finn",
         genre: ["Novel", "Thriller", "Fiction", "Mystery", "Suspense"],
@@ -3462,7 +3441,7 @@ export const BOOKS = [
         textColor: "#e13131",
     },
     {   
-        cover: WHERE_THE_CRAWDADS_SING,
+        cover: BookCovers.WHERE_THE_CRAWDADS_SING,
         title: "where the crawdads sing",
         author: "delia owens",
         genre: ["novel", "Mystery", "Historical Fiction", "Bildungsroman"],
