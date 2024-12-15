@@ -14,14 +14,21 @@ const Dashboard = ({ sidebarToggle, setSidebarToggle }) => {
 			className={`${
 				sidebarToggle ? "" : "lg:ml-64"
 			} w-full transition-all duration-300 ease-in-out`}>
+			{/* NAVBAR COMPONENT */}
 			<Navbar
 				sidebarToggle={sidebarToggle}
 				setSidebarToggle={setSidebarToggle}
 				setQuery={setQuery}
 			/>
+
+			{/* CONTENTS AND ROUTES FOR HYPERLINK */}
 			<div className="px-10">
 				<Routes location={location} key={location.pathname}>
+
+					{/* HOME CONTENT */}
 					<Route path="/" element={<Home />} />
+
+					{/* DICTIONARY CONTENT */}
 					<Route
 						path="/dictionary"
 						element={<Dictionary query={query} />}

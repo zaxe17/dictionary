@@ -2,10 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* HIDE THE SCROLLBAR */
 .scroll-hidden::-webkit-scrollbar {
     display: none;
 }
 
+/* CUSTOMIZE SCROLLBAR */
 @layer components {
     ::-webkit-scrollbar {
         width: 8px;
@@ -21,10 +23,12 @@
     }
 }
 
+/* BOOK BACKGROUND IN POPUP PHONE SIZE */
 .book-background {
     background-color: var(--bg-color-mobile);
 }
 
+/* BOOK BACKGROUND IN POPUP LAPTOP SIZE */
 @media (min-width: 1024px) {
 	.book-background {
 		background-color: var(--bg-color-default);

@@ -3,23 +3,30 @@ import { HiMenuAlt2 } from "react-icons/hi";
 import { useLocation } from "react-router-dom";
 
 const Navbar = ({ sidebarToggle, setSidebarToggle }) => {
+	/* SET PAGES TITLE BASE ON PAGE TITLE LINKS */
     const location = useLocation();
 
+	/* PAGE TITLE */
     const pageTitles = {
         "/": "Home",
         "/dictionary": "Dictionary",
         "/books": "Books",
     };
 
+	/* GETTING THE PAGE TITLE */
     const getTitle = () => pageTitles[location.pathname] || "App";
 
     return (
 		<nav className="bg-teal-600 px-4 py-3 flex justify-between sticky top-0 w-full z-50">
 			<div className="flex items-center text-xl">
+
+				{/* MENU BAR */}
 				<HiMenuAlt2
 					className="text-teal-200 me-1 cursor-pointer text-3xl"
-					onClick={() => setSidebarToggle(!sidebarToggle)}
+					onClick={() => setSidebarToggle(!sidebarToggle)} /* TOGGLE TO SHOW THE SIDEBAR OR HIDE */
 				/>
+
+				{/* DISPLAY PAGE TITLE */}
 				<span className="text-teal-50 font-semibold">{getTitle()}</span>
 			</div>
 
