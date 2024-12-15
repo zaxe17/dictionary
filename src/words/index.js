@@ -1,7 +1,5 @@
 import * as BookCovers from "./BookCover";
 
-
-
 export const WORDS = [
     {
         letter: 'aa',
