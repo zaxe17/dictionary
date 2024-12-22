@@ -17,7 +17,7 @@ const Navbar = ({ sidebarToggle, setSidebarToggle }) => {
     const getTitle = () => pageTitles[location.pathname] || "App";
 
     return (
-		<nav className="bg-teal-600 px-4 py-3 flex justify-between sticky top-0 w-full z-50">
+		<nav className="bg-teal-600 px-4 py-3 mb-14 flex justify-between sticky top-0 w-full z-50">
 			<div className="flex items-center text-xl">
 
 				{/* MENU BAR */}

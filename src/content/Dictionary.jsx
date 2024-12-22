@@ -2,7 +2,6 @@ import { useState } from "react";
 import { WORDS } from "../const";
 import Popup from "../component/Popup";
 import { motion } from "framer-motion";
-import Search from "../component/Search";
 
 /* GET THE ITEMS FOR SEARCHBAR */
 const getFilteredItems = (query, items) => {
@@ -18,11 +17,10 @@ const getFilteredItems = (query, items) => {
 	);
 };
 
-const Dictionary = () => {
-	const [query, setQuery] = useState("");
-	const filteredItems = getFilteredItems(query, WORDS);
+const Dictionary = ({ query }) => {
 	const [open, setOpen] = useState(false);
 	const [selectedWord, setSelectedWord] = useState(null);
+	const filteredItems = getFilteredItems(query, WORDS);
 
 	/* HANDLE POPUP CLOSE AND OPEN */
 	const handleClosePopup = () => {
@@ -32,12 +30,6 @@ const Dictionary = () => {
 
 	return (
 		<div className="pt-10">
-
-			{/* SEARCH COMPONENT */}
-			<div className="flex justify-center items-center mx-auto lg:my-6 flex-col w-full h-full">
-				<Search setQuery={setQuery} />
-			</div>
-
 			{/* DISPLAY OBJECT IN DICTIONARY */}
 			{filteredItems.length > 0 ? (
 				filteredItems.map((words, index) => (

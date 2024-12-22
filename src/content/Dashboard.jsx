@@ -4,6 +4,7 @@ import Navbar from "../component/Navbar";
 import Home from "./Home";
 import Dictionary from "./Dictionary";
 import Books from "./Books";
+import Search from "../component/Search";
 
 const Dashboard = ({ sidebarToggle, setSidebarToggle }) => {
 	const [query, setQuery] = useState("");
@@ -18,22 +19,33 @@ const Dashboard = ({ sidebarToggle, setSidebarToggle }) => {
 			<Navbar
 				sidebarToggle={sidebarToggle}
 				setSidebarToggle={setSidebarToggle}
-				setQuery={setQuery}
 			/>
 
-			{/* CONTENTS AND ROUTES FOR HYPERLINK */}
+			{/* CONTENTS, SEARCHBAR, AND ROUTES FOR HYPERLINK */}
 			<div className="px-10">
-				<Routes location={location} key={location.pathname}>
+				{/* SEARCHBAR COMPONENT */}
+				{location.pathname !== "/" && (
+					<div className="flex justify-center items-center mx-auto flex-col w-full h-full">
+						<Search setQuery={setQuery} />
+					</div>	
+				)}
 
+				<Routes location={location} key={location.pathname}>
 					{/* HOME CONTENT */}
-					<Route path="/" element={<Home />} />
+					<Route 
+						path="/"
+						element={<Home />} />
 
 					{/* DICTIONARY CONTENT */}
 					<Route
 						path="/dictionary"
 						element={<Dictionary query={query} />}
 					/>
-					<Route path="/books" element={<Books query={query} />} />
+
+					{/* BOOKS CONTENT */}
+					<Route 
+						path="/books"
+						element={<Books query={query} />} />
 				</Routes>
 			</div>
 		</div>
