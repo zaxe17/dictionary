@@ -12,10 +12,10 @@ const getFilteredItems = (query, items) => {
     /* SEARCHING THE ITEMS IN BOOKS (TITLE, AUTHOR, GENRE) */
     return items.filter(
         (item) =>
-            item.title.toLowerCase().includes(query.toLowerCase()) ||
-            item.author.toLowerCase().includes(query.toLowerCase()) ||
+            item.title.toLowerCase().startsWith(query.toLowerCase()) ||
+            item.author.toLowerCase().startsWith(query.toLowerCase()) ||
             item.genre.some((genre) =>
-                genre.toLowerCase().includes(query.toLowerCase())
+                genre.toLowerCase().startsWith(query.toLowerCase())
             )
     );
 };

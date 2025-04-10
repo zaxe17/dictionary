@@ -10,6 +10,7 @@ const Searchbar = () => {
 	const [popupContent, setPopupContent] = useState(null);
 	const [isPopupOpen, setIsPopupOpen] = useState(false);
 	const searchBarRef = useRef(null);
+	const inputRef = useRef(null);
 
 	/* HANDLE ITEMS IN BOOKS AND WORDS */
 	const handleSearch = (e) => {
@@ -70,9 +71,23 @@ const Searchbar = () => {
 			}
 		};
 
+		const handleSlashKey = (e) => {
+			if (
+				e.key === "/" &&
+				document.activeElement.tagName !== "INPUT" &&
+				document.activeElement.tagName !== "TEXTAREA"
+			) {
+				e.preventDefault();
+				inputRef.current?.focus();
+			}
+		};
+
 		document.addEventListener("mousedown", handleClickOutside);
+		window.addEventListener("keydown", handleSlashKey);
+
 		return () => {
 			document.removeEventListener("mousedown", handleClickOutside);
+			window.removeEventListener("keydown", handleSlashKey);
 		};
 	}, []);
 
@@ -83,9 +98,9 @@ const Searchbar = () => {
 				initial={{ width: "11%" }}
 				transition={{ duration: 1 }}
 				className="relative">
-
 				{/* INPUT FOR SEARCHBAR */}
 				<input
+					ref={inputRef}
 					type="search"
 					placeholder="Search..."
 					className="w-full h-9 lg:h-full p-4 rounded-full bg-teal-400 shadow-xl outline-none placeholder-teal-700 focus:text-white text-teal-900"
@@ -101,7 +116,6 @@ const Searchbar = () => {
 			{/* SHOW RESULT ITEMS BASE ON USERS INPUT */}
 			{activeSearch.length > 0 && (
 				<div className="absolute top-20 p-2 bg-teal-400 text-white w-full rounded-xl left-1/2 -translate-x-1/2 flex flex-col gap-2">
-
 					{/* DISPLAY WORDS AND BOOKS ABOVE OF SEARCHBAR */}
 					{activeSearch.map((result, index) => (
 						<div
@@ -115,7 +129,6 @@ const Searchbar = () => {
 										togglePopup(
 											<div className="w-fit mx-auto my-4 max-w-full">
 												<div className="sticky top-0 z-10">
-
 													{/* WORDS */}
 													<h1 className="text-teal-600 text-center capitalize text-5xl font-bold mb-2">
 														{result.word}
@@ -152,7 +165,6 @@ const Searchbar = () => {
 										togglePopup(
 											<div className="scroll-hidden">
 												<div className="flex flex-wrap lg:items-center">
-
 													{/* BOOKS COVER */}
 													<div className="w-1/2">
 														<img
@@ -160,7 +172,7 @@ const Searchbar = () => {
 															alt=""
 														/>
 													</div>
-													
+
 													{/* BOOKS DETAILS */}
 													<div
 														className="lg:w-1/2 p-12 overflow-y-scroll"
@@ -168,7 +180,6 @@ const Searchbar = () => {
 															maxHeight:
 																"calc(80vh - 3rem)",
 														}}>
-
 														{/* BOOKS TITLE */}
 														<h2 className="capitalize lg:text-3xl text-teal-800 font-bold mt-5">
 															{result.title}
