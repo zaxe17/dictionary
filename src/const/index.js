@@ -3436,7 +3436,7 @@ export const BOOKS = [
                 sm: "#1c1d22",
             }
         ],
-        textColor: "#e13131",
+        textColor: "#ffffff",
     },
     {   
         cover: BookCovers.WHERE_THE_CRAWDADS_SING,
