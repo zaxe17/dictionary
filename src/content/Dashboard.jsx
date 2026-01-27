@@ -27,14 +27,12 @@ const Dashboard = ({ sidebarToggle, setSidebarToggle }) => {
 				{location.pathname !== "/" && (
 					<div className="flex justify-center items-center mx-auto flex-col w-full h-full">
 						<Search setQuery={setQuery} />
-					</div>	
+					</div>
 				)}
 
 				<Routes location={location} key={location.pathname}>
 					{/* HOME CONTENT */}
-					<Route 
-						path="/"
-						element={<Home />} />
+					<Route path="/" element={<Home />} />
 
 					{/* DICTIONARY CONTENT */}
 					<Route
@@ -43,9 +41,7 @@ const Dashboard = ({ sidebarToggle, setSidebarToggle }) => {
 					/>
 
 					{/* BOOKS CONTENT */}
-					<Route 
-						path="/books"
-						element={<Books query={query} />} />
+					<Route path="/books" element={<Books query={query} />} />
 				</Routes>
 			</div>
 		</div>

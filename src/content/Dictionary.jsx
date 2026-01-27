@@ -12,8 +12,8 @@ const getFilteredItems = (query, items) => {
 	/* SEARCHING THE ITEMS IN WORDS */
 	return items.filter((item) =>
 		item.description.some((desc) =>
-			desc.word.toLowerCase().startsWith(query.toLowerCase())
-		)
+			desc.word.toLowerCase().startsWith(query.toLowerCase()),
+		),
 	);
 };
 
@@ -34,7 +34,6 @@ const Dictionary = ({ query }) => {
 			{filteredItems.length > 0 ? (
 				filteredItems.map((words, index) => (
 					<div key={index} className="pt-10">
-
 						{/* DISPLAY LETTER OBJECT IN WORDS */}
 						<motion.h1
 							whileInView={{ opacity: 1 }}
@@ -46,7 +45,7 @@ const Dictionary = ({ query }) => {
 							}}>
 							{words.letter}
 						</motion.h1>
-						
+
 						{/* DISPLAY THE OBJECT (WORD, PRONOUNCE, DESC) IN DESCRIPTION */}
 						<div className="border-b border-teal-600 pb-4 break-words">
 							<div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
@@ -54,10 +53,10 @@ const Dictionary = ({ query }) => {
 									.filter((desc) =>
 										desc.word
 											.toLowerCase()
-											.includes(query.toLowerCase())
+											.includes(query.toLowerCase()),
 									)
 									.sort((a, b) =>
-										a.word.localeCompare(b.word)
+										a.word.localeCompare(b.word),
 									)
 									.map((descript, index) => (
 										/* CONTENT CARD */
@@ -67,11 +66,11 @@ const Dictionary = ({ query }) => {
 											transition={{ duration: 1 }}
 											key={index}
 											className="h-48 lg:h-60 rounded-2xl shadow-md flex flex-col lg:m-[0.5rem] bg-teal-200 hover:bg-teal-100 transition-colors duration-200 ease-in-out cursor-pointer p-3 group"
-											onClick={() => { /* SELECTED CARD CLICKED, POPUP SHOWN AND DISPLAY THE CONTENT */
+											onClick={() => {
+												/* SELECTED CARD CLICKED, POPUP SHOWN AND DISPLAY THE CONTENT */
 												setSelectedWord(descript);
 												setOpen(true);
 											}}>
-												
 											{/* WORD */}
 											<h2 className="capitalize font-semibold text-teal-800 group-hover:text-teal-600 transition-colors duration-200 ease-in-out text-md lg:text-3xl pt-4">
 												{descript.word}
@@ -87,14 +86,14 @@ const Dictionary = ({ query }) => {
 												{descript.desc.map(
 													(
 														description,
-														descIndex
+														descIndex,
 													) => (
 														<li
 															key={descIndex}
 															className="text-teal-900 break-words pb-3">
 															{description}
 														</li>
-													)
+													),
 												)}
 											</ul>
 										</motion.div>
@@ -112,12 +111,10 @@ const Dictionary = ({ query }) => {
 
 			{/* POPUP COMPONENT */}
 			<Popup open={open} onClose={handleClosePopup} page="dictionary">
-
 				{/* DISPLAY THE SELECTED WORD */}
 				{selectedWord && (
 					<div className="w-fit mx-auto my-4 max-w-full">
 						<div className="sticky top-0 z-10">
-
 							{/* WORD */}
 							<h1 className="text-teal-600 text-center capitalize text-5xl font-bold mb-2">
 								{selectedWord.word}
