@@ -20,6 +20,18 @@ const getFilteredItems = (query, items) => {
 	);
 };
 
+const hexToRgba = (hex, alpha = 0.3) => {
+	// Remove '#' if it exists
+	hex = hex.replace("#", "");
+
+	// Parse r, g, b
+	const r = parseInt(hex.substring(0, 2), 16);
+	const g = parseInt(hex.substring(2, 4), 16);
+	const b = parseInt(hex.substring(4, 6), 16);
+
+	return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+};
+
 const Books = ({ query }) => {
 	const [open, setOpen] = useState(false);
 	const [selectedBook, setSelectedBook] = useState(null);
@@ -95,13 +107,13 @@ const Books = ({ query }) => {
 						{selectedBook.bgColor.map((bgColor, index) => (
 							<div
 								key={index}
-								className="book-background flex flex-wrap lg:items-strech"
+								className="book-background flex flex-wrap lg:items-stretch"
 								style={{
 									"--bg-color-default": bgColor.lg,
 									"--bg-color-mobile": bgColor.sm,
 								}}>
 								{/* BOOK COVER */}
-								<div className="lg:w-1/2 mx-auto overflow-hidden h-">
+								<div className="lg:w-1/2 mx-auto overflow-hidden">
 									<img
 										src={selectedBook.cover}
 										alt={selectedBook.title}
@@ -111,7 +123,7 @@ const Books = ({ query }) => {
 
 								{/* DISPLAY TITLE, AUTHOR, GENRE, DESCRIPTION */}
 								<div
-									className="relative lg:w-1/2 p-12 overflow-y-hidden scroll-hidden"
+									className="relative lg:w-1/2 overflow-hidden"
 									style={{
 										maxHeight: "calc(80vh - 3rem)",
 									}}>
@@ -121,15 +133,22 @@ const Books = ({ query }) => {
 											alt={selectedBook.title}
 											className="h-full w-full object-cover"
 										/>
-										<div
-											className="absolute inset-0 bg-black/30 backdrop-blur-2xl"
-											style={{
-												boxShadow:
-													"0 4px 30px rgba(0, 0, 0, 0.1)",
-											}}></div>
 									</div>
 
-									<div className="relative z-10">
+									<div
+										className="relative w-full h-full px-12 py-8 z-10 backdrop-blur-2xl overflow-y-auto scroll-hidden"
+										style={{
+											"--bg-color-default": hexToRgba(
+												bgColor.lg,
+												0.3,
+											),
+											"--bg-color-mobile": hexToRgba(
+												bgColor.sm,
+												0.3,
+											),
+											boxShadow:
+												"0 4px 30px rgba(0, 0, 0, 0.1)",
+										}}>
 										{/* BOOK TITLE */}
 										<h2
 											className="capitalize lg:text-4xl font-bold"
@@ -164,19 +183,13 @@ const Books = ({ query }) => {
 										</p>
 
 										{/* DESCRIPTION */}
-										<div
-											className="overflow-y-scroll scroll-hidden my-2"
+										<p
+											className="mb-5 text-sm lg:text-base break-words"
 											style={{
-												maxHeight: "calc(65vh - 12rem)",
+												color: selectedBook.textColor,
 											}}>
-											<p
-												className="mb-5 text-sm lg:text-base break-words"
-												style={{
-													color: selectedBook.textColor,
-												}}>
-												{selectedBook.description}
-											</p>
-										</div>
+											{selectedBook.description}
+										</p>
 
 										{/* BUTTON */}
 										<button className="py-2 px-6 bg-teal-500 text-white rounded-lg text-base lg:text-lg shadow hover:bg-teal-600">
