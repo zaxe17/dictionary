@@ -114,7 +114,7 @@ const Dictionary = ({ query }) => {
 				{/* DISPLAY THE SELECTED WORD */}
 				{selectedWord && (
 					<div className="w-fit mx-auto my-4 max-w-full">
-						<div className="sticky top-0 z-10">
+						<div className="sticky top-0 z-10 bg-teal-200">
 							{/* WORD */}
 							<h1 className="text-teal-600 text-center capitalize text-5xl font-bold mb-2">
 								{selectedWord.word}

@@ -37,7 +37,7 @@ const Popup = ({ open, onClose, children, page }) => {
 
 				{/* EX BUTTON */}
 				<button
-					className="absolute top-0 right-2 p-1 rounded-lg text-gray-400 hover:text-gray-600 text-2xl"
+					className="absolute top-0 right-2 p-1 z-50 rounded-lg text-gray-400 hover:text-gray-600 text-2xl"
 					onClick={onClose}>
 					<span className="font-bold">X</span>
 				</button>

@@ -20,7 +20,7 @@ const getFilteredItems = (query, items) => {
 	);
 };
 
-const hexToRgba = (hex, alpha = 0.3) => {
+const hexToRgba = (hex, alpha = 0.1) => {
 	// Remove '#' if it exists
 	hex = hex.replace("#", "");
 
@@ -113,21 +113,17 @@ const Books = ({ query }) => {
 									"--bg-color-mobile": bgColor.sm,
 								}}>
 								{/* BOOK COVER */}
-								<div className="lg:w-1/2 mx-auto overflow-hidden">
+								<div className="lg:w-1/2 lg:h-[80vh] mx-auto overflow-hidden">
 									<img
 										src={selectedBook.cover}
 										alt={selectedBook.title}
-										className="h-full w-full object-cover rounded-lg"
+										className="h-full w-full object-cover"
 									/>
 								</div>
 
 								{/* DISPLAY TITLE, AUTHOR, GENRE, DESCRIPTION */}
-								<div
-									className="relative lg:w-1/2 overflow-hidden"
-									style={{
-										maxHeight: "calc(80vh - 3rem)",
-									}}>
-									<div className="absolute inset-0 overflow-hidden">
+								<div className="relative lg:w-1/2 lg:h-[80vh] overflow-hidden">
+									<div className="absolute inset-0 w-full overflow-hidden">
 										<img
 											src={selectedBook.cover}
 											alt={selectedBook.title}
@@ -136,18 +132,18 @@ const Books = ({ query }) => {
 									</div>
 
 									<div
-										className="relative w-full h-full px-12 py-8 z-10 backdrop-blur-2xl overflow-y-auto scroll-hidden"
+										className="bg-black/20 relative w-full h-full px-12 py-8 z-10 backdrop-blur-2xl overflow-y-auto scroll-hidden"
 										style={{
 											"--bg-color-default": hexToRgba(
 												bgColor.lg,
-												0.3,
+												0.1,
 											),
 											"--bg-color-mobile": hexToRgba(
 												bgColor.sm,
-												0.3,
+												0.1,
 											),
 											boxShadow:
-												"0 4px 30px rgba(0, 0, 0, 0.1)",
+												"0 4px 30px rgba(0, 0, 0, 0.3)",
 										}}>
 										{/* BOOK TITLE */}
 										<h2
