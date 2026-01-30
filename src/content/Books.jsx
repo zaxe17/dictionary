@@ -132,7 +132,7 @@ const Books = ({ query }) => {
 									</div>
 
 									<div
-										className="bg-black/20 relative w-full h-full px-12 py-8 z-10 backdrop-blur-2xl overflow-y-auto scroll-hidden"
+										className="relative w-full h-full px-12 py-8 z-10 backdrop-blur-2xl overflow-y-auto scroll-hidden"
 										style={{
 											"--bg-color-default": hexToRgba(
 												bgColor.lg,
